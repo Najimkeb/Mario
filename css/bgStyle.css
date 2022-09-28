@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --widthTotal: 500vw;
+  --colorBgLight: #5f79fe;
+}
+
+html {
+  font-family: "Press Start 2P", cursive;
+  overflow: scroll;
+  background: #009f2c;
+}
+
+body {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  background: var(--colorBgLight);
+}
+
+.scrollBg {
+  background: var(--colorBgLight);
+  height: 100vh;
+  width: var(--widthTotal);
+}
+
+.scrollingWrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  width: var(--widthTotal);
+}
+
+#scrollOverlay {
+  position: absolute;
+  z-index: 1500;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card {
+  background-image: url(../img/bgR2.svg);
+  background-repeat: repeat-x;
+  background-position: bottom center;
+
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  background-size: 30vh auto;
+  height: 100%;
+
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  width: 100%;
+
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 10px;
+  padding-right: 40px;
+  position: absolute;
+  z-index: 1;
+  top: -20px;
+}
+
+header img {
+  width: 15em;
+  height: auto;
+}
+
+.content {
+  display: block;
+  width: 90%;
+  height: 70%;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  background: rgba(255, 255, 255, 0.288);
+  overflow: hidden;
+  position: absolute;
+  z-index: 1000;
+}
+
+footer {
+  --footerBottom: 7vh;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  z-index: -10;
+  bottom: var(--footerBottom);
+}
+
+footer:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+
+  background-image: url(../img/bgR2.svg);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 30vh auto;
+
+  bottom: calc(var(--footerBottom) * -1);
+}
+
+footer img {
+  width: 25em;
+  height: auto;
+}
+
+@media screen and (min-width: 800px) {
+  footer {
+    bottom: 12.5vh;
+  }
+
+  footer:after {
+    bottom: -12.5vh;
+  }
+
+  .card {
+    background-image: url(../img/bgR2.svg);
+    background-size: 50vh auto;
+  }
+
+  footer::after {
+    background-image: url(../img/bgR2.svg);
+    background-size: 50vh auto;
+  }
+}
