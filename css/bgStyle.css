@@ -10,7 +10,7 @@
 
 html {
   font-family: "Press Start 2P", cursive;
-  overflow: scroll;
+  overflow: hidden;
   background: #009f2c;
 }
 
@@ -33,12 +33,7 @@ body {
   width: var(--widthTotal);
 }
 
-#scrollOverlay {
-  position: absolute;
-  z-index: 1500;
-  height: 100vh;
-  width: 100vw;
-}
+
 
 .card {
   background-image: url(../img/bgR2.svg);
