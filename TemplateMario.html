@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.Loop{
+
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 40px;
+    display: flex;
+
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.mario{
+    height: 20px;
+        width: 20px;
+        background-repeat: no-repeat;
+        background-image: url(./img/spriteMario.png);
+        background-position: -128px 0px;
+
+}
+    .runLeft{
+        background-position: center center;
+        background-image: url(./img/MarioLittle.gif);
+    }.runRight{
+        background-position: center center;
+        background-image: url(./img/MarioLittle.gif);
+        transform: scaleX(-1);
+    }
+   
+        
+    
+
+</style>
+<body>
+    <!-- https://www.youtube.com/watch?v=3Tc_Ek0ASSA&ab_channel=Typhlosion4President -->
+    <div class="Loop">
+        <div class="mario"></div>
+    
+    </div>
+    <button onclick="(()=>{
+
+        document.querySelector('.mario').classList.toggle('runRight');
+    })()">Run Right</button>
+    <button onclick="(()=>{
+
+        document.querySelector('.mario').classList.toggle('runLeft');
+    })()">Run Left</button>
+</body>
+</html>

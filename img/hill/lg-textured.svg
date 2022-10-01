@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="97" height="130" fill="none" viewBox="0 0 97 130">
+  <mask id="a" width="95" height="128" x="1" y="1" maskUnits="userSpaceOnUse" style="mask-type:alpha">
+    <path fill="#C4C4C4" d="M44.5 1.5v1h-3v1h-2v1h-1v1h-1v2h-1v2h-1v3h-1v4h-1v33h-8v2h-2v1h-1v1h-1v2h-1v2h-1v3h-1v5h-6v1h-3v1h-2v1h-1v1h-1v2h-1v2h-1v3h-1v4h-1v48h94v-16h-1v-4h-1v-3h-1v-2h-1v-2h-1v-1h-1v-1h-2v-1h-3v-1h-5v-65h-1v-4h-1v-3h-1v-2h-1v-2h-1v-1h-1v-1h-2v-1h-3v-1h-6v-5h-1v-3h-1v-2h-1v-2h-1v-1h-1v-1h-2v-1h-3v-1h-8Z"/>
+  </mask>
+  <g mask="url(#a)">
+    <path fill="#009F00" d="M1.5.5h95v128h-95z"/>
+  </g>
+  <path stroke="#000" d="M1 80.5V128l95 .5v-16m-94-32v-4m1 0v-3m1 0v-2m1 0v-2m1 0V68m1 .5v-1m.5-.5h2m0-1h3m0-1H18m2.5 0H18m0 0v-4.5m1 0v-3m1 0v-2m1 0v-2m1 0v-1m1 0v-1m.5-.5h2m0-1h3m0-1H33m3.5 0H33m0 0V16.5m1 0v-4m1 0v-3m1 0v-2m1 0v-2m1 0v-1m1 0v-1m.5-.5h2m0-1h3m0-1h8m0 1h3m0 1h2m0 1h1m0 1h1m.5.5v2m1 0v2m1 0v3m1 0V17h-2.5 8m0 1h3m0 1h2m.5.5v1m1 0v1m1 0v2m1 0v2m1 0v3m1 0v4m1 0V97h-3.5 8m0 1h3m0 1h2m.5.5v1m1 0v1m1 0v2m1 0v2m1 0v3m1 0v4M76.5 98h-3m0 1h-2m0 1h-1m0 1h-1m-.5.5v2m-1 0v2m-1 0v3m-1 0v4M20.5 66h3m0 1h2m.5.5v1m1 0v1m1 0v2m1 0v2m1 0v3m1 0v4M36.5 50h3m0 1h2m0 1h1m0 1h1m.5.5v2m1 0v2m1 0v3m1 0v4M60.5 18h-3m0 1h-2m-.5.5v1m-1 0v1m-1 0v2m-1 0v2m-1 0v3m-1 0v4"/>
+  <path fill="#000" d="M44 5h2v2h-2zm7 0h2v2h-2zm9 17h2v2h-2zm7 0h2v2h-2zm9 80h2v2h-2zm7 0h2v2h-2zM28 53h2v2h-2zm7 0h2v2h-2zM12 70h2v2h-2zm7 0h2v2h-2z"/>
+</svg>

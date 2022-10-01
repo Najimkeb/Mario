@@ -9,17 +9,24 @@
 
   <body>
     <div class="scrollBg" id="scrollBg">
-      <div id="scrollOverlay"></div>
+      <nav id="scrollOverlay">
+        <span>WORLD 1</span>
+        
+        <ul id="scrollOverlayUl">
+          <li class="active"><a href="#Card1"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
+          <li class=""><a href="#Card2"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
+          <li class=""><a href="#Card3"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
+          <li class=""><a href="#Card4"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
+          <li class=""><a href="#Card5"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
+        </ul>
+      </nav>
       <div class="scrollingWrapper">
         <!-- Start Section -->
-        <section class="card">
+        <section id="Card1" class="card">
           <header>
-            <img src="./img/platform_cloud.svg" alt="undefined" />
-            <img src="./img/platform_cloud.svg" alt="undefined" />
-            <img src="./img/platform_cloud.svg" alt="undefined" />
           </header>
 
-          <div class="content">
+          <div  class="content" tabindex="1">
             <h2>Card 1</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
@@ -30,15 +37,11 @@
           </div>
 
           <footer>
-            <img src="./img/hill_xl-plain.svg" alt="undefined" />
-            <img src="./img/hill_xl-plain.svg" alt="undefined" />
           </footer>
         </section>
         <!-- Start Section 2 -->
-        <section class="card">
+        <section id="Card2" class="card" tabindex="2">
           <header>
-            <img src="./img/platform_cloud.svg" alt="undefined" />
-            <img src="./img/platform_cloud.svg" alt="undefined" />
           </header>
 
           <div class="content">
@@ -47,15 +50,11 @@
           </div>
 
           <footer>
-            <img src="./img/hill_xl-plain.svg" alt="undefined" />
-            <img src="./img/hill_xl-plain.svg" alt="undefined" />
           </footer>
         </section>
         <!-- Start Section 3 -->
-        <section class="card">
+        <section id="Card3" class="card" tabindex="3">
           <header>
-            <img src="./img/platform_cloud.svg" alt="undefined" />
-            <img src="./img/platform_cloud.svg" alt="undefined" />
           </header>
 
           <div class="content">
@@ -64,14 +63,10 @@
           </div>
 
           <footer>
-            <img src="./img/hill_xl-plain.svg" alt="undefined" />
-            <img src="./img/hill_xl-plain.svg" alt="undefined" />
           </footer>
         </section>
-        <section class="card">
+        <section id="Card4" class="card" tabindex="4">
           <header>
-            <img src="./img/platform_cloud.svg" alt="undefined" />
-            <img src="./img/platform_cloud.svg" alt="undefined" />
           </header>
 
           <div class="content">
@@ -80,29 +75,25 @@
           </div>
 
           <footer>
-            <img src="./img/hill_xl-plain.svg" alt="undefined" />
-            <img src="./img/hill_xl-plain.svg" alt="undefined" />
           </footer>
         </section>
         <!-- Start Section 4 -->
-        <section class="card">
+        <section id="Card5" class="card" tabindex="5">
           <header>
-            <img src="./img/platform_cloud.svg" alt="undefined" />
-            <img src="./img/platform_cloud.svg" alt="undefined" />
           </header>
 
           <div class="content">
-            <h2>Card 5</h2>
+            <h2>Card 5 </h2>
             <p>Card 5 content</p>
           </div>
 
           <footer>
-            <img src="./img/hill_xl-plain.svg" alt="undefined" />
-            <img src="./img/hill_xl-plain.svg" alt="undefined" />
+      
           </footer>
         </section>
         <!-- End Section -->
       </div>
+      <div id="Mario"class="mario"></div>
     </div>
 
     <script src="./script.js"></script>
