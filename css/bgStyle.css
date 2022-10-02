@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-
+@import url(./mario.css);
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
+  image-rendering: pixelated;
 }
 
 html {
@@ -25,6 +25,7 @@ body {
   overflow-x: scroll;
   background: var(--colorBgLight);
   transition: background 0.5s ease-in-out;
+  position: relative;
 }
 
 .scrollBg {
@@ -32,6 +33,7 @@ body {
   height: 100vh;
   width: var(--widthTotal);
   transition: background 0.2s ease-in-out;
+  
 }
 
 .scrollingWrapper {
@@ -39,10 +41,11 @@ body {
   flex-wrap: nowrap;
   height: 100vh;
   width: var(--widthTotal);
+  
 }
 nav#scrollOverlay{
-  position: absolute;
-  top: 2em;
+  position: fixed;
+  top: 1em;
   left: 0;
   height:2em;
   width: 100%;
@@ -56,7 +59,7 @@ nav#scrollOverlay{
 nav>span{
   color: rgb(255, 230, 0);
   font-size: 1em;
-  font-weight: bold;
+
   padding-left: 4vw;
   text-shadow: rgb(0, 0, 0) 4px 0px 0px, rgb(0, 0, 0) 3.87565px 0.989616px 0px, rgb(0, 0, 0) 3.51033px 1.9177px 0px, rgb(0, 0, 0) 2.92676px 2.72656px 0px, rgb(0, 0, 0) 2.16121px 3.36588px 0px, rgb(0, 0, 0) 1.26129px 3.79594px 0px, rgb(0, 0, 0) 0.282949px 3.98998px 0px, rgb(0, 0, 0) -0.712984px 3.93594px 0px, rgb(0, 0, 0) -1.66459px 3.63719px 0px, rgb(0, 0, 0) -2.51269px 3.11229px 0px, rgb(0, 0, 0) -3.20457px 2.39389px 0px, rgb(0, 0, 0) -3.69721px 1.52664px 0px, rgb(0, 0, 0) -3.95997px 0.56448px 0px, rgb(0, 0, 0) -3.97652px -0.432781px 0px, rgb(0, 0, 0) -3.74583px -1.40313px 0px, rgb(0, 0, 0) -3.28224px -2.28625px 0px, rgb(0, 0, 0) -2.61457px -3.02721px 0px, rgb(0, 0, 0) -1.78435px -3.57996px 0px, rgb(0, 0, 0) -0.843183px -3.91012px 0px, rgb(0, 0, 0) 0.150409px -3.99717px 0px, rgb(0, 0, 0) 1.13465px -3.8357px 0px, rgb(0, 0, 0) 2.04834px -3.43574px 0px, rgb(0, 0, 0) 2.83468px -2.82216px 0px, rgb(0, 0, 0) 3.44477px -2.03312px 0px, rgb(0, 0, 0) 3.84068px -1.11766px 0px, rgb(0, 0, 0) 3.9978px -0.132717px 0px;
 
@@ -73,7 +76,7 @@ nav>ul{
   padding-right: 4vw;
   
 }nav>ul>li{
-  opacity: 0.5;
+  opacity: 0.1;
   transition: 0.3s ease-in-out;
 }
 nav>ul>li.active{
@@ -96,25 +99,18 @@ nav>ul>li>a>img{
   height: auto;
 }
 .card {
-  background-image: var(--bgUrlLight);
-  background-repeat: repeat-x;
-  background-position: bottom center;
-
   width: 100vw;
-  display: grid;
-  grid-template-rows: 0.5fr 1fr 0.5fr;
-  background-size: 30vh auto;
-  height: 100%;
-
+  height: 100vh;
   overflow: hidden;
   position: relative;
   z-index: 1;
 }
 
 header {
-  width: 100%;
+  width: var(--widthTotal);
 
-  height: auto;
+
+  height: 5em;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -132,28 +128,30 @@ header img {
 }
 
 .content {
+
   display: block;
   width: 90%;
   height: 70%;
   left: 50%;
-  top: 45%;
-  transform: translate(-50%, -50%);
+  top: 20%;
+  transform: translate(-50%, -20%);
   margin: auto;
   overflow: hidden;
   position: absolute;
   z-index: 1000;
+  font-size: 0.8em;
 }
 
 footer {
-  --footerBottom: 7vh;
-  width: 100%;
-  height: auto;
+  width: calc(var(--widthTotal)/1.5);
+  height: 18em;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   position: absolute;
-  z-index: -10;
-  bottom: var(--footerBottom);
+  transform: scale(2);
+  bottom: 120px;
+  overflow: hidden;
  
 }
 
@@ -162,87 +160,23 @@ footer:after {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 10;
-
+  z-index: 1000;
   background-image: var(--bgUrlLight);
   background-repeat: repeat-x;
   background-position: bottom;
-  background-size: 30vh auto;
 
-
-  bottom: calc(var(--footerBottom) * -1);
 }
 
 footer img {
-  height: clamp(25px, 150px, 150px);
+  height: 50%;
   width: auto;
-  object-position: bottom center;
-  object-fit: contain;
+z-index: -1;
+  object-fit: cover;
   transition: opacity 0.5s ease-in-out;
   opacity: var(--opacityBgLight);
-  transform: translate(0%, -49%)scale(2) ;
-
-}
-.mario{
-  height: 20px;
-  width: 20px;
-  background-image: url(../img/spriteMario.png);
-  background-repeat: no-repeat;
-  background-position: -128px 0px;
-
-  position: absolute;
-  bottom: 7.6vh;
-  left: 50%;
-  z-index: 100;
-  transform: translate(0%, -100%)scale(3) ;
-  image-rendering: pixelated;
-}
-.runLeft{
-  background-position: center center;
-  background-image: url(../img/MarioLittle.gif);
-}.runRight{
-  background-position: center center;
-  background-image: url(../img/MarioLittle.gif);
-  transform: translate(0%, -100%)scale(3) scaleX(-1);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 740px) {
-  footer {
-    bottom: 12.5vh;
-  }
-
-
-  footer:after {
-    bottom: -12.5vh;
-  }
-
-  .card {
-    background-image: var(--bgUrlLight);
-    background-size: 50vh auto;
-  }
-
-  footer::after {
-    background-image: var(--bgUrlLight);
-    background-size: 50vh auto;
-  }
-  .mario{
-    bottom: 12.5vh;
-  }
+  transform: translateY(60%);
 
 
 }
+
 
