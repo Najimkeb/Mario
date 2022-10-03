@@ -5,21 +5,28 @@
     <title>Mario Projet 1</title>
     <link rel="stylesheet" href="./css/bgStyle.css" />
     <link rel="stylesheet" href="./css/content.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
     <div class="scrollBg" id="scrollBg">
-      <div id="scrollOverlay"></div>
+      <nav id="scrollOverlay">
+        <span>WORLD 1</span>
+        
+        <ul id="scrollOverlayUl">
+          <li class="active"><a href="#Card1"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
+          <li class=""><a href="#Card2"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
+          <li class=""><a href="#Card3"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
+          <li class=""><a href="#Card4"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
+          <li class=""><a href="#Card5"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
+        </ul>
+      </nav>
       <div class="scrollingWrapper">
+        <header>
+        </header>
         <!-- Start Section -->
-        <section class="card">
-          <header>
-            <img src="./img/platform_cloud.svg" alt="undefined" />
-            <img src="./img/platform_cloud.svg" alt="undefined" />
-            <img src="./img/platform_cloud.svg" alt="undefined" />
-          </header>
-
-          <div class="content">
+        <section id="Card1" class="card">
+          <div  class="content" tabindex="1">
             <h2>Card 1</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
@@ -28,81 +35,47 @@
               commodi, minima laudantium sapiente nostrum?
             </p>
           </div>
-
-          <footer>
-            <img src="./img/hill_xl-plain.svg" alt="undefined" />
-            <img src="./img/hill_xl-plain.svg" alt="undefined" />
-          </footer>
         </section>
         <!-- Start Section 2 -->
-        <section class="card">
-          <header>
-            <img src="./img/platform_cloud.svg" alt="undefined" />
-            <img src="./img/platform_cloud.svg" alt="undefined" />
-          </header>
-
+        <section id="Card2" class="card" tabindex="2">
           <div class="content">
             <h2>Card 2</h2>
             <p>Card 2 content</p>
           </div>
-
-          <footer>
-            <img src="./img/hill_xl-plain.svg" alt="undefined" />
-            <img src="./img/hill_xl-plain.svg" alt="undefined" />
-          </footer>
         </section>
         <!-- Start Section 3 -->
-        <section class="card">
-          <header>
-            <img src="./img/platform_cloud.svg" alt="undefined" />
-            <img src="./img/platform_cloud.svg" alt="undefined" />
-          </header>
-
+        <section id="Card3" class="card" tabindex="3">
           <div class="content">
             <h2>Card 3</h2>
             <p>Card 3 content</p>
           </div>
-
-          <footer>
-            <img src="./img/hill_xl-plain.svg" alt="undefined" />
-            <img src="./img/hill_xl-plain.svg" alt="undefined" />
-          </footer>
         </section>
-        <section class="card">
-          <header>
-            <img src="./img/platform_cloud.svg" alt="undefined" />
-            <img src="./img/platform_cloud.svg" alt="undefined" />
-          </header>
-
+        <section id="Card4" class="card" tabindex="4">
           <div class="content">
             <h2>Card 4</h2>
             <p>Card 4 content</p>
           </div>
-
-          <footer>
-            <img src="./img/hill_xl-plain.svg" alt="undefined" />
-            <img src="./img/hill_xl-plain.svg" alt="undefined" />
-          </footer>
         </section>
         <!-- Start Section 4 -->
-        <section class="card">
-          <header>
-            <img src="./img/platform_cloud.svg" alt="undefined" />
-            <img src="./img/platform_cloud.svg" alt="undefined" />
-          </header>
-
+        <section id="Card5" class="card" tabindex="5">
           <div class="content">
-            <h2>Card 5</h2>
+            <h2>Card 5 </h2>
             <p>Card 5 content</p>
           </div>
-
-          <footer>
-            <img src="./img/hill_xl-plain.svg" alt="undefined" />
-            <img src="./img/hill_xl-plain.svg" alt="undefined" />
-          </footer>
         </section>
         <!-- End Section -->
+        <footer>
+        </footer>
+        <div id="Mario"class="mario little">
+          <div id="EndMessage" class="bulle">
+          <p>
+            Merci d'avoir Joué !
+          </p>
       </div>
+    </div>
+        <div id="Champignon" class=""></div>
+      </div>
+      
     </div>
 
     <script src="./script.js"></script>
