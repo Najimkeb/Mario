@@ -73,9 +73,10 @@ label {
 }
 
 textarea {
-    margin-bottom: auto;
-    height: 100vh;
-    max-height: 20em;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2em;
+    box-sizing: border-box;
 
 }
 
@@ -98,13 +99,7 @@ input[type="submit"] {
 
     }
 
-    textarea {
-        height: 100%;
-        margin-bottom: 2em;
-
-    }
 }
 
-form>div {}
 
 /* end contact css */
