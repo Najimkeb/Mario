@@ -11,7 +11,6 @@ html {
   scroll-behavior: smooth;
   font-family: "Press Start 2P", cursive;
   overflow: hidden;
-  background: #009f2c;
     /* Variable General */
     --widthTotal: 500vw;
     /* Variable Theme */
@@ -23,13 +22,12 @@ html {
 body {
   overflow-y: hidden;
   overflow-x: scroll;
-  background: var(--colorBgLight);
   transition: background 0.5s ease-in-out;
   position: relative;
 }
 
 .scrollBg {
-  background: var(--colorBgLight);
+  background-color: var(--colorBgLight);
   height: 100vh;
   width: var(--widthTotal);
   transition: background 0.2s ease-in-out;
@@ -58,6 +56,7 @@ nav#scrollOverlay{
 }
 nav>span{
   color: rgb(255, 230, 0);
+  /*color: rgb(255, 0, 0);*/
   font-size: 1em;
 
   padding-left: 4vw;

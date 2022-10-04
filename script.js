@@ -21,17 +21,6 @@ const url_platform_cloud = "./img/platform_cloud.svg";
 
 
 //console.log();
-function zoom(event) {
-  if (left > document.body.clientWidth * 4) {
-    left = document.body.clientWidth * 4;
-  } else if (left < 0) {
-    left = 0;
-  } else {
-    left += event.deltaY * 0.8;
-  }
-  document.body.scrollTo(left, 0);
-  //console.log(left, event.deltaY, document.body.clientWidth);
-}
 
 
 
@@ -58,7 +47,7 @@ function createHeadersCloud() {
 }
 
 createHeadersCloud(headers, url_platform_cloud);
-createFooterHill(footers, url_footerHill);
+createFooterHill(footers, url_footerHill);//url_footerPyramid
 
 
 
@@ -69,13 +58,9 @@ const Champignon = document.getElementById("Champignon");
 const EndMessage = document.getElementById('EndMessage')
 let progress = 0;
 let stop = 0;
-
+let dir = 0;
 let ScrollState = 0;
 
-
-
-scrollOverlay.onwheel = zoom;
-scrollBg.onwheel = zoom;
 
 
 let scrollPosition = scrollBg.getBoundingClientRect();
@@ -172,40 +157,49 @@ function EndOfWorld() {
 
 
 
-const Update = () => {
+const Update = (arg) => {
   scrollPosition = scrollBg.getBoundingClientRect();
-
-  //console.log(scrollPosition.x, Xn1);
+  //console.log("event")
+  //console.log(scrollPosition.x*-1, Xn1,arg);
   //Mario Movement
-  const X = scrollPosition.x * -1;
-  Mario.style.left = (Xn1 + 50) + "px";
-  if (Xn1 > X) {
+  const X = (scrollPosition.x * -1) + arg;
+  left = X + 50;
+  Mario.style.left = left + "px";
+
+
+const MarioStop = (time)=>{
+  return setTimeout(()=>{
+    Mario.classList.remove("runRight");
+    Mario.classList.remove("runLeft");
+    
+    Mario.style.transform = "scaleX(1)scale(2)";
+  },time)
+}
+
+
+
+
+
+
+
+  if (Xn1 > X || arg<0) {
     Mario.classList.add("runRight");
     Mario.style.transform = "scaleX(-1)scale(2)";
-    Xn1 += 2
-    stop = 0;
+    MarioStop(500);
   }
-  else if (Xn1 < X) {
+  else if (Xn1 < X || arg>0) {
     Mario.classList.add("runLeft");
     Mario.style.transform = "scaleX(1)scale(2)";
-    Xn1 -= 2
-    stop = 0;
+    MarioStop(500);
+  }
+
+  if (Xn1 - X > 500 || Xn1 - X < -500) {
+    console.log(Xn1 - X)
+    MarioStop(0)
   }
 
 
-  else {
-    if (stop > 10) {
-      Mario.classList.remove("runRight");
-      Mario.classList.remove("runLeft");
-
-      Mario.style.transform = "scaleX(1)scale(2)";
-    } else {
-      stop++;
-    }
-
-  }
-
-
+  Xn1 = X ;
 
   //Mario Evolution
 
@@ -227,14 +221,24 @@ const Update = () => {
   ForthWorld();
   EndOfWorld();
 
-
-
-
-
+  document.body.scrollTo(X, 0);
   //console.log(progress);
-  setTimeout(() => {
-    Xn1 = scrollPosition.x * -1
-    requestAnimationFrame(Update);
-  }, 1000 / 100);
+
+  console.log(Xn1 >= 2020 && Xn1 <= 2030);
+ 
 };
-Update();
+
+
+
+
+
+function zoom(event) {
+  dir = Math.round(event.deltaY/60)
+  Update(dir * 10);
+}
+
+
+
+
+body.addEventListener('scroll', (e) => Update(0));
+body.addEventListener('wheel',zoom);
