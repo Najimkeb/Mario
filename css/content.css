@@ -101,7 +101,15 @@ input[type="submit"] {
     }
 
 }
+@media screen and (min-height:600px) {
+    form {
+        display: grid;
+        grid: 0.5em;
+        grid-template-columns: 0.5fr 1fr;
+        height: 100%;
 
+    }
+}
 
 /* end contact css */
 
