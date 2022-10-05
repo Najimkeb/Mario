@@ -91,7 +91,7 @@ input[type="submit"] {
     background-color: gold;
 }
 
-@media screen and (min-width:900px) {
+@media screen and (min-width:480px) {
     form {
         display: grid;
         gap: 2em;
@@ -99,17 +99,6 @@ input[type="submit"] {
         height: 100%;
 
     }
-
-}
-@media screen and (min-height:600px) {
-    form {
-        display: grid;
-        grid: 0.5em;
-        grid-template-columns: 0.5fr 1fr;
-        height: 100%;
-
-    }
-}
 
 /* end contact css */
 
