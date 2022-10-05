@@ -1,83 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Mario Projet 1</title>
-    <link rel="stylesheet" href="./css/bgStyle.css" />
-    <link rel="stylesheet" href="./css/content.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
 
-  <body>
-    <div class="scrollBg" id="scrollBg">
-      <nav id="scrollOverlay">
-        <span>WORLD 1</span>
-        
-        <ul id="scrollOverlayUl">
-          <li class="active"><a href="#Card1"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
-          <li class=""><a href="#Card2"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
-          <li class=""><a href="#Card3"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
-          <li class=""><a href="#Card4"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
-          <li class=""><a href="#Card5"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
-        </ul>
-      </nav>
-      <div class="scrollingWrapper">
-        <header>
-        </header>
-        <!-- Start Section -->
-        <section id="Card1" class="card">
-          <div  class="content" tabindex="1">
-            <h2>Card 1</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-              accusamus libero pariatur amet illum modi perferendis minima?
-              Beatae similique modi enim aperiam dolorum distinctio nam,
-              commodi, minima laudantium sapiente nostrum?
-            </p>
+<head>
+  <meta charset="UTF-8" />
+  <title>Mario Projet 1</title>
+  <link rel="stylesheet" href="./css/bgStyle.css" />
+  <link rel="stylesheet" href="./css/content.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="scrollBg" id="scrollBg">
+    <nav id="scrollOverlay">
+      <span>WORLD 1</span>
+
+      <ul id="scrollOverlayUl">
+        <li class="active"><a href="#Card1"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
+        <li class=""><a href="#Card2"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
+        <li class=""><a href="#Card3"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
+        <li class=""><a href="#Card4"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
+        <li class=""><a href="#Card5"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
+      </ul>
+    </nav>
+    <div class="scrollingWrapper">
+      <header>
+      </header>
+      <!-- Start Section -->
+      <section id="Card1" class="card">
+        <div class="content" tabindex="1">
+          <h2>Card 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+            accusamus libero pariatur amet illum modi perferendis minima?
+            Beatae similique modi enim aperiam dolorum distinctio nam,
+            commodi, minima laudantium sapiente nostrum?
+          </p>
+        </div>
+      </section>
+      <!-- Start Section 2 -->
+      <section id="Card2" class="card" tabindex="2">
+        <div class="content">
+          <h2>Card 2</h2>
+          <p>Card 2 content</p>
+        </div>
+      </section>
+      <!-- Start Section 3 -->
+      <section id="Card3" class="card" tabindex="3">
+        <div class="content">
+          <h2>Card 3</h2>
+          <p>Card 3 content</p>
+        </div>
+      </section>
+      <section id="Card4" class="card" tabindex="4">
+        <div class="content">
+          <h2>Card 4</h2>
+          <p>Card 4 content</p>
+        </div>
+      </section>
+      <!-- Start Section 4 -->
+      <section id="Card5" class="card" tabindex="5">
+        <div class="content">
+          <h2>Contact</h2>
+          <div class="container">
+            <form action="">
+              <div>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="0">Select Country:</option>
+                  <option value="1">France</option>
+                  <option value="2">Royaume-Uni</option>
+                  <option value="3">Allemagne</option>
+                  <option value="4">Espagne</option>
+                  <option value="6">Italie</option>
+                </select>
+              </div>
+              <div>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                <input type="submit" value="Submit" id="submit-button" />
+              </div>
+            </form>
           </div>
-        </section>
-        <!-- Start Section 2 -->
-        <section id="Card2" class="card" tabindex="2">
-          <div class="content">
-            <h2>Card 2</h2>
-            <p>Card 2 content</p>
-          </div>
-        </section>
-        <!-- Start Section 3 -->
-        <section id="Card3" class="card" tabindex="3">
-          <div class="content">
-            <h2>Card 3</h2>
-            <p>Card 3 content</p>
-          </div>
-        </section>
-        <section id="Card4" class="card" tabindex="4">
-          <div class="content">
-            <h2>Card 4</h2>
-            <p>Card 4 content</p>
-          </div>
-        </section>
-        <!-- Start Section 4 -->
-        <section id="Card5" class="card" tabindex="5">
-          <div class="content">
-            <h2>Card 5 </h2>
-            <p>Card 5 content</p>
-          </div>
-        </section>
-        <!-- End Section -->
-        <footer>
-        </footer>
-        <div id="Mario"class="mario little">
-          <div id="EndMessage" class="bulle">
+        </div>
+      </section>
+      <!-- End Section -->
+      <footer>
+      </footer>
+      <div id="Mario" class="mario little">
+        <div id="EndMessage" class="bulle">
           <p>
             Merci d'avoir Joué !
           </p>
+        </div>
       </div>
-    </div>
-        <div id="Champignon" class=""></div>
-      </div>
-      
+      <div id="Champignon" class=""></div>
     </div>
 
-    <script src="./script.js"></script>
-  </body>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
 </html>
