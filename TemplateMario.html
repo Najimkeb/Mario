@@ -8,7 +8,7 @@
     <meta name="description" content="Mario">
 </head>
 <style>
-@import url(./css/mario.css);
+/*@import url(./css/mario.css);*/
 .Loop{
     image-rendering: pixelated;
     padding: 10px;
@@ -106,8 +106,30 @@
     background-position: -210px 0;
 
   } 
-    
 
+
+
+
+.coin{
+    height:36px;
+  width:36px;
+  transform-style:preserve-3d;
+  background-image: url("./img/mario/marioCoin2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: flip 1.2s infinite;
+
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    60% {
+        transform: rotateY(180deg);
+    }
+}
+    
 </style>
 <body>
     <!-- https://www.youtube.com/watch?v=3Tc_Ek0ASSA&ab_channel=Typhlosion4President -->
@@ -133,6 +155,12 @@
         </p>
     </div>
     <div class="Champignon"></div>
+
+    <div class="flipper-container">
+        <div class="coin">
+        </div>
+      </div>
+
 
 
 </body>

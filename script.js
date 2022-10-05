@@ -17,37 +17,51 @@ const url_footerPyramid = [
 ];
 const headers = document.querySelector("header");
 const url_platform_cloud = "./img/platform_cloud.svg";
+const audio = new Audio('./sound/smw_piece.wav');
+const music = new Audio('./sound/mario.ogg');
 
-
-
+music.play();
 //console.log();
 
 
 
-function createFooterHill(footers, url_footerHill) {
+function createFooterHill(footers, url_footerHill,alt) {
+  const Coins = document.createElement("div");
   const random = Math.floor(Math.random() * 10 + 2);
   for (let index = 0; index <= random; index++) {
     const img = document.createElement("img");
     const image =
       url_footerHill[Math.floor(Math.random() * url_footerHill.length)];
     img.src = image;
-    img.alt = image;
+    img.alt = alt;
     footers.appendChild(img);
+
   }
+  Coins.classList.add("coins");
+  footers.appendChild(Coins);
+  for (let index = 0; index <= 15; index++) {
+    const coin = document.createElement("div");
+    coin.className = "coin";
+    coin.setAttribute("Disable", false);
+    Coins.appendChild(coin);
+    
+  }
+
+
 }
-function createHeadersCloud() {
+function createHeadersCloud(headers, url_platform_cloud,alt) {
   const random = Math.floor(Math.random() * 10 + 1) / 1.5;
   for (let index = 0; index <= random; index++) {
     const img = document.createElement("img");
     img.src = url_platform_cloud;
-    img.alt = url_platform_cloud;
+    img.alt = alt;
 
     headers.appendChild(img);
   }
 }
 
-createHeadersCloud(headers, url_platform_cloud);
-createFooterHill(footers, url_footerHill);//url_footerPyramid
+createHeadersCloud(headers, url_platform_cloud,"pixel art Cloud");
+createFooterHill(footers, url_footerHill,"pixel art Hill");//url_footerPyramid
 
 
 
@@ -123,31 +137,18 @@ function ForthWorld() {
     return;
   }
 }
-let StopEndOfWorld = 0;
 function EndOfWorld() {
   if (
-    scrollPosition.x * -1 >= document.body.clientWidth * 4 &&
+    scrollPosition.x * -1 >= (document.body.clientWidth * 4)-50  &&
     scrollPosition.x * -1 < document.body.clientWidth * 5
   ) {
-    Mario.classList.add("SayHello");
+   
     body.style = "--colorBgLight: black; --opacityBgLight: 0.5;"; //#5f79fe;
     //Message de Fin de jeu
-    
-    if(StopEndOfWorld >= 20){
-        EndMessage.classList.add('active');
-        StopEndOfWorld = 20;
-    }else{
-        EndMessage.classList.remove('active');
-        StopEndOfWorld++;
-    }
+
     //
     scrollOverlayUl.children[4].classList.add("active");
     scrollOverlay.children[0].innerText = "WORLD 5";
-  } else {
-    StopEndOfWorld = 0;
-    body.style = "--colorBgLight: #5f79fe;--opacityBgLight: 1;"; //
-    Mario.classList.remove("SayHello");
-    EndMessage.classList.remove('active');
   }
 }
 
@@ -157,7 +158,14 @@ function EndOfWorld() {
 
 
 
+
+const CoinPos = document.getElementsByClassName('coin');
+let IndexOfcoin = -1;
+
 const Update = (arg) => {
+  Mario.classList.remove("SayHello");
+  EndMessage.classList.remove('active');
+
   scrollPosition = scrollBg.getBoundingClientRect();
   //console.log("event")
   //console.log(scrollPosition.x*-1, Xn1,arg);
@@ -165,10 +173,13 @@ const Update = (arg) => {
   const X = (scrollPosition.x * -1) + arg;
   left = X + 50;
   Mario.style.left = left + "px";
-
+  
+  body.style = "--colorBgLight: #5f79fe;--opacityBgLight: 1;"; //
+  
 
 const MarioStop = (time)=>{
   return setTimeout(()=>{
+
     Mario.classList.remove("runRight");
     Mario.classList.remove("runLeft");
     
@@ -224,9 +235,23 @@ const MarioStop = (time)=>{
   document.body.scrollTo(X, 0);
   //console.log(progress);
 
-  console.log(Xn1 >= 2020 && Xn1 <= 2030);
- 
-};
+
+if(Xn1 >= document.body.clientWidth * 4){
+  setTimeout(()=>{
+    Mario.classList.add("SayHello");
+    EndMessage.classList.add('active');
+  },1000)
+}
+
+
+
+RemoveCoins()
+}
+//console.log(CoinPos)
+
+
+
+
 
 
 
@@ -240,5 +265,32 @@ function zoom(event) {
 
 
 
+
+function RemoveCoins(){
+  for (let index = 0; index < CoinPos.length; index++) {
+    
+
+      if(!(CoinPos[index].getBoundingClientRect().left> 10 || CoinPos[index].getBoundingClientRect().left<-10)){
+        //coin.classList.add('active');
+        console.log(index)
+        CoinPos[index].setAttribute("Disable", true);
+        audio.play();
+
+      }else{
+        //
+      }
+    
+  }
+}
+
+
+
 body.addEventListener('scroll', (e) => Update(0));
 body.addEventListener('wheel',zoom);
+body.addEventListener('resize', (e) => console.log(e));
+
+
+
+
+
+

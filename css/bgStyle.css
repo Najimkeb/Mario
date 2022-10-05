@@ -166,7 +166,7 @@ footer:after {
 
 }
 
-footer img {
+footer>img {
   height: 50%;
   width: auto;
 z-index: -1;
@@ -177,5 +177,23 @@ z-index: -1;
 
 
 }
+footer>.coins{
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 68px;
+  left: 100vw;
 
+
+
+
+
+  align-items: center;
+
+
+}
 
