@@ -18,12 +18,15 @@ const url_footerPyramid = [
 const headers = document.querySelector("header");
 const url_platform_cloud = "./img/platform_cloud.svg";
 const audio = new Audio('./sound/smw_piece.wav');
-const music = new Audio('./sound/mario.ogg');
-
-music.play();
-//console.log();
-
-
+let AudioCanPlay = false;
+const audioSource = document.querySelector('audio');
+function playGames(){
+  audioSource.play();
+  setTimeout(()=>{
+    document.body.scrollTo(150, 0);
+    AudioCanPlay = true;
+  },500)
+}
 
 function createFooterHill(footers, url_footerHill,alt) {
   const Coins = document.createElement("div");
@@ -239,7 +242,7 @@ const MarioStop = (time)=>{
 if(Xn1 >= document.body.clientWidth * 4){
   setTimeout(()=>{
     Mario.classList.add("SayHello");
-    EndMessage.classList.add('active');
+    
   },1000)
 }
 
@@ -249,7 +252,13 @@ RemoveCoins()
 }
 //console.log(CoinPos)
 
-
+function setMessage(event){
+  event.preventDefault()
+  const fname = document.getElementById("fname")
+  const EndMessageValue = document.getElementById("EndMessageValue")
+  EndMessageValue.innerText = "Merci d'avoir Joué "+fname.value+" !"
+  EndMessage.classList.add('active');
+}
 
 
 
@@ -271,10 +280,16 @@ function RemoveCoins(){
     
 
       if(!(CoinPos[index].getBoundingClientRect().left> 10 || CoinPos[index].getBoundingClientRect().left<-10)){
+        if(CoinPos[index].getAttribute("disable") == "false"){
+          console.log(index)
+        CoinPos[index].setAttribute("disable", true);
+        if(AudioCanPlay){
+          audio.play();
+        }
+        }
+        
         //coin.classList.add('active');
-        console.log(index)
-        CoinPos[index].setAttribute("Disable", true);
-        audio.play();
+        
 
       }else{
         //

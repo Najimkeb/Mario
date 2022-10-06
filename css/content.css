@@ -91,6 +91,9 @@ input[type="submit"] {
     background-color: gold;
 }
 
+
+
+
 @media screen and (min-width:480px) {
     form {
         display: grid;
@@ -145,6 +148,10 @@ input[type="submit"] {
     width: 10%;
     height: 10%;
     padding-top: 1vh;
+    transition: .5s ease-in-out;
+}
+.fleche>img:active {
+    transform: scale(0.9);
 }
 
 @keyframes slide {

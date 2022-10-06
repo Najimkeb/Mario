@@ -118,7 +118,7 @@
 
 
 
-.coin[Disable="false"]{
+.coin[disable="false"]{
     height:100%;
   width:36px;
   transform-style:preserve-3d;
@@ -128,7 +128,7 @@
   animation: flip 1.2s infinite;
 
 }
-.coin[Disable="true"]{
+.coin[disable="true"]{
     transform: scale(5);
 }
 @keyframes flip {

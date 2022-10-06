@@ -8,10 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    
     <div class="scrollBg" id="scrollBg">
+      
       <nav id="scrollOverlay">
         <span>WORLD 1</span>
-  
+        
         <ul id="scrollOverlayUl">
           <li class="active"><a href="#Card1"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
           <li class=""><a href="#Card2"><img src="./img/mario-coin.gif" alt="Level1"></a></li>
@@ -28,7 +30,12 @@
           <div class="contentMenu" tabindex="1">
             <h2 class="logo"><img src="./img/logo.svg"></h2>
             <p class="swipe">Swipe à droite pour commencer !</p>
-            <div class=" fleche"><img src="./img/fleche.svg"></div>
+            <div class=" fleche" onclick="playGames()">
+              <audio controls>
+                <source src="./sound/mario.ogg" type="audio/ogg">
+              </audio>
+              <img src="./img/fleche.svg">
+            </div>
           </div>
         </section>
         <!-- Start Section 2 -->
@@ -39,7 +46,7 @@
               <p>Mario est un personnge de jeu vidéo devenu la mascotte de Nintendo, créer par le talentueux Shigeru
                 Yamamoto en 1981, Véritable icone du monde vidéo ludique, il est LE symbole de toute une génération.
               </p>
-              <img src="/Mario/img/cartoucheMario.svg">
+              <img src="./img/cartoucheMario.svg">
             </div>
         </section>
         <!-- Start Section 3 -->
@@ -60,7 +67,7 @@
           <div class="content">
             <h2>Contact</h2>
             <div class="container">
-              <form action="">
+              <form action="#" onsubmit="setMessage(event)">
                 <div>
                   <label for="fname">First Name</label>
                   <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -94,7 +101,7 @@
         </footer>
         <div id="Mario" class="mario little">
           <div id="EndMessage" class="bulle">
-            <p>
+            <p id="EndMessageValue">
               Merci d'avoir Joué !
             </p>
           </div>
