@@ -17,18 +17,18 @@ const url_footerPyramid = [
 ];
 const headers = document.querySelector("header");
 const url_platform_cloud = "./img/platform_cloud.svg";
-const audio = new Audio('./sound/smw_piece.wav');
+const audio = new Audio("./sound/smw_piece.wav");
 let AudioCanPlay = false;
-const audioSource = document.querySelector('audio');
-function playGames(){
+const audioSource = document.querySelector("audio");
+function playGames() {
   audioSource.play();
-  setTimeout(()=>{
+  setTimeout(() => {
     document.body.scrollTo(150, 0);
     AudioCanPlay = true;
-  },500)
+  }, 500);
 }
 
-function createFooterHill(footers, url_footerHill,alt) {
+function createFooterHill(footers, url_footerHill, alt) {
   const Coins = document.createElement("div");
   const random = Math.floor(Math.random() * 10 + 2);
   for (let index = 0; index <= random; index++) {
@@ -38,7 +38,6 @@ function createFooterHill(footers, url_footerHill,alt) {
     img.src = image;
     img.alt = alt;
     footers.appendChild(img);
-
   }
   Coins.classList.add("coins");
   footers.appendChild(Coins);
@@ -47,12 +46,9 @@ function createFooterHill(footers, url_footerHill,alt) {
     coin.className = "coin";
     coin.setAttribute("Disable", false);
     Coins.appendChild(coin);
-    
   }
-
-
 }
-function createHeadersCloud(headers, url_platform_cloud,alt) {
+function createHeadersCloud(headers, url_platform_cloud, alt) {
   const random = Math.floor(Math.random() * 10 + 1) / 1.5;
   for (let index = 0; index <= random; index++) {
     const img = document.createElement("img");
@@ -63,28 +59,21 @@ function createHeadersCloud(headers, url_platform_cloud,alt) {
   }
 }
 
-createHeadersCloud(headers, url_platform_cloud,"pixel art Cloud");
-createFooterHill(footers, url_footerHill,"pixel art Hill");//url_footerPyramid
-
-
+createHeadersCloud(headers, url_platform_cloud, "pixel art Cloud");
+createFooterHill(footers, url_footerHill, "pixel art Hill"); //url_footerPyramid
 
 const scrollOverlayUl = document.getElementById("scrollOverlayUl");
 
 const Mario = document.getElementById("Mario");
 const Champignon = document.getElementById("Champignon");
-const EndMessage = document.getElementById('EndMessage')
+const EndMessage = document.getElementById("EndMessage");
 let progress = 0;
 let stop = 0;
 let dir = 0;
 let ScrollState = 0;
 
-
-
 let scrollPosition = scrollBg.getBoundingClientRect();
 let Xn1 = scrollPosition.x * -1;
-
-
-
 
 function FirstWorld() {
   if (
@@ -142,10 +131,9 @@ function ForthWorld() {
 }
 function EndOfWorld() {
   if (
-    scrollPosition.x * -1 >= (document.body.clientWidth * 4)-50  &&
+    scrollPosition.x * -1 >= document.body.clientWidth * 4 - 50 &&
     scrollPosition.x * -1 < document.body.clientWidth * 5
   ) {
-   
     body.style = "--colorBgLight: black; --opacityBgLight: 0.5;"; //#5f79fe;
     //Message de Fin de jeu
 
@@ -155,75 +143,64 @@ function EndOfWorld() {
   }
 }
 
-
-
-
-
-
-
-
-const CoinPos = document.getElementsByClassName('coin');
+const CoinPos = document.getElementsByClassName("coin");
 let IndexOfcoin = -1;
 
 const Update = (arg) => {
   Mario.classList.remove("SayHello");
-  EndMessage.classList.remove('active');
+  EndMessage.classList.remove("active");
 
   scrollPosition = scrollBg.getBoundingClientRect();
   //console.log("event")
   //console.log(scrollPosition.x*-1, Xn1,arg);
   //Mario Movement
-  const X = (scrollPosition.x * -1) + arg;
+  const X = scrollPosition.x * -1 + arg;
   left = X + 50;
   Mario.style.left = left + "px";
-  
+
   body.style = "--colorBgLight: #5f79fe;--opacityBgLight: 1;"; //
-  
 
-const MarioStop = (time)=>{
-  return setTimeout(()=>{
+  const MarioStop = (time) => {
+    return setTimeout(() => {
+      Mario.classList.remove("runRight");
+      Mario.classList.remove("runLeft");
 
-    Mario.classList.remove("runRight");
-    Mario.classList.remove("runLeft");
-    
-    Mario.style.transform = "scaleX(1)scale(2)";
-  },time)
-}
+      Mario.style.transform = "scaleX(1)scale(2)";
+    }, time);
+  };
 
-
-
-
-
-
-
-  if (Xn1 > X || arg<0) {
+  if (Xn1 > X || arg < 0) {
     Mario.classList.add("runRight");
     Mario.style.transform = "scaleX(-1)scale(2)";
     MarioStop(500);
-  }
-  else if (Xn1 < X || arg>0) {
+  } else if (Xn1 < X || arg > 0) {
     Mario.classList.add("runLeft");
     Mario.style.transform = "scaleX(1)scale(2)";
     MarioStop(500);
   }
 
   if (Xn1 - X > 500 || Xn1 - X < -500) {
-    console.log(Xn1 - X)
-    MarioStop(0)
+    console.log(Xn1 - X);
+    MarioStop(0);
   }
 
-
-  Xn1 = X ;
+  Xn1 = X;
 
   //Mario Evolution
 
-  if (scrollPosition.x * -1 >= document.body.clientWidth &&
-    scrollPosition.x * -1 < document.body.clientWidth * 2 && Mario.classList.contains("little")) {
+  if (
+    scrollPosition.x * -1 >= document.body.clientWidth &&
+    scrollPosition.x * -1 < document.body.clientWidth * 2 &&
+    Mario.classList.contains("little")
+  ) {
     Mario.classList.remove("little");
     Champignon.classList.add("disable");
     Mario.classList.add("normal");
   }
-  if (scrollPosition.x * -1 < document.body.clientWidth && Mario.classList.contains("normal")) {
+  if (
+    scrollPosition.x * -1 < document.body.clientWidth &&
+    Mario.classList.contains("normal")
+  ) {
     Mario.classList.remove("normal");
     Champignon.classList.remove("disable");
     Mario.classList.add("little");
@@ -238,74 +215,75 @@ const MarioStop = (time)=>{
   document.body.scrollTo(X, 0);
   //console.log(progress);
 
+  if (Xn1 >= document.body.clientWidth * 4) {
+  }
 
-if(Xn1 >= document.body.clientWidth * 4){
-  setTimeout(()=>{
-    Mario.classList.add("SayHello");
-    
-  },1000)
-}
-
-
-
-RemoveCoins()
-}
+  RemoveCoins();
+};
 //console.log(CoinPos)
 
-function setMessage(event){
-  event.preventDefault()
-  const fname = document.getElementById("fname")
-  const EndMessageValue = document.getElementById("EndMessageValue")
-  EndMessageValue.innerText = "Merci d'avoir Joué "+fname.value+" !"
-  EndMessage.classList.add('active');
+function setMessage(event) {
+  Mario.classList.add("SayHello");
+  event.preventDefault();
+  const fname = document.getElementById("fname");
+  const EndMessageValue = document.getElementById("EndMessageValue");
+  
+  if(window.innerWidth > 650){
+    EndMessageValue.innerText = "Merci d'avoir Joué " + fname.value + "!\n"
+  }else{
+    const MobileMessage = "Voici mon insta!! "
+    const insta = document.createElement('a')
+    insta.href="#"
+    insta.innerText = "Mario Toulouse"
+    insta.className = "instaBulle"
+    EndMessageValue.innerText = "Merci d'avoir Joué " + fname.value + "!\n"+MobileMessage;
+    EndMessageValue.appendChild(insta);
+  }
+  EndMessage.classList.add("active");
+setTimeout(()=>{
+  EndMessage.classList.remove("active");
+},2000)
+
+  
+  
+
+  
+
+
+
+
+
+  
 }
 
-
-
-
-
-
-
 function zoom(event) {
-  dir = Math.round(event.deltaY/60)
+  dir = Math.round(event.deltaY / 60);
   Update(dir * 10);
 }
 
-
-
-
-
-function RemoveCoins(){
+function RemoveCoins() {
   for (let index = 0; index < CoinPos.length; index++) {
-    
-
-      if(!(CoinPos[index].getBoundingClientRect().left> 10 || CoinPos[index].getBoundingClientRect().left<-10)){
-        if(CoinPos[index].getAttribute("disable") == "false"){
-          console.log(index)
+    if (
+      !(
+        CoinPos[index].getBoundingClientRect().left > 10 ||
+        CoinPos[index].getBoundingClientRect().left < -10
+      )
+    ) {
+      if (CoinPos[index].getAttribute("disable") == "false") {
+        console.log(index);
         CoinPos[index].setAttribute("disable", true);
-        if(AudioCanPlay){
+        if (AudioCanPlay) {
           audio.play();
         }
-        }
-        
-        //coin.classList.add('active');
-        
-
-      }else{
-        //
       }
-    
+
+      //coin.classList.add('active');
+    } else {
+      //
+    }
   }
 }
 
-
-
-body.addEventListener('scroll', (e) => Update(0));
-body.addEventListener('wheel',zoom);
-body.addEventListener('resize', (e) => console.log(e));
-
-
-
-
-
-
+body.addEventListener("scroll", (e) => Update(0));
+body.addEventListener("wheel", zoom);
+body.addEventListener("resize", (e) => console.log(e));

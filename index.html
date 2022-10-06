@@ -38,7 +38,7 @@
       <!-- Start Section 2 -->
       <section id="Card2" class="card" tabindex="2">
         <div class="content">
-          <h2>Biographie</h2>
+          <h2 class="titles">Biographie</h2>
           <div class="biographie">
             <p>Mario est un personnage de jeu vidéo devenu la mascotte de Nintendo, crée par le talentueux Shigeru
               Yamamoto en 1981, Véritable icone du monde vidéo ludique, il est LE symbole de toute une génération.
@@ -49,21 +49,38 @@
       <!-- Start Section 3 -->
       <section id="Card3" class="card" tabindex="3">
         <div class="content">
-          <h2>Card 3</h2>
-          <p>Card 3 content</p>
+          <h2 class="titles">Univers</h2>
+          
+          <div class="ennemis">
+            <h3>Ennemis</h3>
+            <div>
+              <img src="./img/imgCartouche/Cartouche1.svg" alt="cartouche bowser">
+              <img src="./img/imgCartouche/Cartouche2.svg" alt="cartouche koopa">
+              <img src="./img/imgCartouche/Cartouche6.svg" alt="cartouche piranas">
+              <img src="./img/imgCartouche/Cartouche3.svg" alt="cartouche gumba">
+            </div>
+          </div>
+          <div class="amis">
+            <h3>Amis</h3>
+            <div>
+              <img class="active imgCarouselle" src="./img/imgCartouche/Cartouche4.svg" alt="cartouche peach">
+              <img src="./img/imgCartouche/Cartouche5.svg" alt="cartouche luigi ">
+              <img src="./img/imgCartouche/Cartouche7.svg" alt="cartouche yoshi">
+              <img src="./img/imgCartouche/Cartouche8.svg" alt="cartouche toad">
+            </div>
         </div>
+
       </section>
       <section id="Card4" class="card" tabindex="4">
         <div class="content">
-          <h2>Card 4</h2>
+          <h2 class="titles">Card 4</h2>
           <p>Card 4 content</p>
         </div>
       </section>
       <!-- Start Section 4 -->
       <section id="Card5" class="card" tabindex="5">
         <div class="content">
-          <h2>Contact</h2>
-          <div class="container">
+          <h2 class="titles">Contact</h2>
             <form action="#" onsubmit="setMessage(event)">
               <div>
                 <label for="fname">First Name</label>
@@ -83,6 +100,10 @@
                   <option value="4">Espagne</option>
                   <option value="6">Italie</option>
                 </select>
+                <div class="FooterForm">
+                  <span class="Insta">Mon Insta !!</span>
+                  <a href="#"><img src="./img/instag.png" alt="Instagram Links"></a>
+                </div>
               </div>
               <div>
                 <label for="subject">Subject</label>
@@ -90,7 +111,6 @@
                 <input type="submit" value="Submit" id="submit-button" />
               </div>
             </form>
-          </div>
         </div>
       </section>
       <!-- End Section -->
@@ -98,9 +118,9 @@
       </footer>
       <div id="Mario" class="mario little">
         <div id="EndMessage" class="bulle">
-          <p id="EndMessageValue">
+          <span id="EndMessageValue">
             Merci d'avoir Joué !
-          </p>
+            </span>
         </div>
       </div>
       <div id="Champignon" class=""></div>

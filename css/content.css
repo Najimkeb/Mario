@@ -46,13 +46,7 @@ div.content::after {
 /* End Background Card */
 
 /* contact css */
-.container {
-    height: 100%;
-}
 
-h2 {
-    margin-bottom: 1em;
-}
 
 form {
     display: flex;
@@ -95,6 +89,9 @@ input[type="submit"] {
     padding: 1em;
     background-color: gold;
 }
+.FooterForm{
+    display:none;
+}
 
 @media screen and (min-width:480px) {
     form {
@@ -102,8 +99,45 @@ input[type="submit"] {
         gap: 2em;
         grid-template-columns: 0.5fr 1fr;
         height: 100%;
+        
 
     }
+    .FooterForm{
+        text-align: center;
+        margin-top: auto;
+        display:block;
+        max-height: 20em;
+    }
+    .FooterForm>span{
+        color: rgb(255, 230, 0);
+        /*color: rgb(255, 0, 0);*/
+        font-size: 1em;
+        text-shadow: rgb(0, 0, 0) 4px 0px 0px, rgb(0, 0, 0) 3.87565px 0.989616px 0px,
+          rgb(0, 0, 0) 3.51033px 1.9177px 0px, rgb(0, 0, 0) 2.92676px 2.72656px 0px,
+          rgb(0, 0, 0) 2.16121px 3.36588px 0px, rgb(0, 0, 0) 1.26129px 3.79594px 0px,
+          rgb(0, 0, 0) 0.282949px 3.98998px 0px,
+          rgb(0, 0, 0) -0.712984px 3.93594px 0px,
+          rgb(0, 0, 0) -1.66459px 3.63719px 0px, rgb(0, 0, 0) -2.51269px 3.11229px 0px,
+          rgb(0, 0, 0) -3.20457px 2.39389px 0px, rgb(0, 0, 0) -3.69721px 1.52664px 0px,
+          rgb(0, 0, 0) -3.95997px 0.56448px 0px,
+          rgb(0, 0, 0) -3.97652px -0.432781px 0px,
+          rgb(0, 0, 0) -3.74583px -1.40313px 0px,
+          rgb(0, 0, 0) -3.28224px -2.28625px 0px,
+          rgb(0, 0, 0) -2.61457px -3.02721px 0px,
+          rgb(0, 0, 0) -1.78435px -3.57996px 0px,
+          rgb(0, 0, 0) -0.843183px -3.91012px 0px,
+          rgb(0, 0, 0) 0.150409px -3.99717px 0px, rgb(0, 0, 0) 1.13465px -3.8357px 0px,
+          rgb(0, 0, 0) 2.04834px -3.43574px 0px, rgb(0, 0, 0) 2.83468px -2.82216px 0px,
+          rgb(0, 0, 0) 3.44477px -2.03312px 0px, rgb(0, 0, 0) 3.84068px -1.11766px 0px,
+          rgb(0, 0, 0) 3.9978px -0.132717px 0px;
+      
+    }
+    .FooterForm>a>img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
 
     /* end contact css */
 
@@ -225,41 +259,181 @@ input[type="submit"] {
     /* card 2 start */
 
     .biographie {
-        padding-top: auto;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding-bottom: auto;
+        flex-direction: column;
+        height: 100%;  
     }
-
-    .biographie>img {
-        padding-top: 2rem;
-        width: 30%;
-        height: 30%;
+    .biographie>p{
+        line-height: 1.3em;
     }
-
-    .biographie>p {
-        width: 30%;
-        margin: 2rem;
+    .biographie>img{
+        margin-top: auto;
+        object-fit: contain;
+        width: 100%;
+        object-position: center center;
+        scale: 0.7;
+       transform: translateY(-2em);
     }
-
-    @media screen and (max-width: 480px) {
-
-        .biographie {
+    @media screen and (min-width:380px) {
+        .biographie>p{
+            margin-top: 3vh;
+        }
+        .biographie>img{
+       transform: translateY(0)scale(1.2);
+        }
+        
+    }
+    @media screen and (min-width:700px) {
+        .biographie{
             display: flex;
-            text-align: center;
-            justify-items: center;
+            height: 100%;
         }
+        .biographie>p{
+            margin-top: 3vh;
+            max-height: 63ch;
 
-        .biographie>img {
-            width: 70%;
-            height: 70%;
         }
-
-        .biographie>p {
+        .biographie>img{
+            transform: translateY(0)scale(1);
             width: auto;
+            height: 100%;
         }
-
     }
+    @media screen and (min-width:1200px) {
+        .biographie{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            height: 100%;
+        }
+        .biographie>p{
+            margin-top: 9vh;
+            max-height: 63ch;
+            line-height: 1.9em;
+
+        }
+        .biographie>img{
+            transform: translateY(0)scale(1);
+            width: auto;
+            height: 100%;
+        }
+    }
+
+
+/* univers css*/
+
+
+.titles {
+    margin-bottom: 0.25em;
+    color: rgb(255, 230, 0);
+    font-size: 2em;
+    font-family: Mario_titre;
+    letter-spacing: 0.2em;
+    text-shadow: rgb(0, 0, 0) 4px 0px 0px, rgb(0, 0, 0) 3.87565px 0.989616px 0px, rgb(0, 0, 0) 3.51033px 1.9177px 0px, rgb(0, 0, 0) 2.92676px 2.72656px 0px, rgb(0, 0, 0) 2.16121px 3.36588px 0px, rgb(0, 0, 0) 1.26129px 3.79594px 0px, rgb(0, 0, 0) 0.282949px 3.98998px 0px, rgb(0, 0, 0) -0.712984px 3.93594px 0px, rgb(0, 0, 0) -1.66459px 3.63719px 0px, rgb(0, 0, 0) -2.51269px 3.11229px 0px, rgb(0, 0, 0) -3.20457px 2.39389px 0px, rgb(0, 0, 0) -3.69721px 1.52664px 0px, rgb(0, 0, 0) -3.95997px 0.56448px 0px, rgb(0, 0, 0) -3.97652px -0.432781px 0px, rgb(0, 0, 0) -3.74583px -1.40313px 0px, rgb(0, 0, 0) -3.28224px -2.28625px 0px, rgb(0, 0, 0) -2.61457px -3.02721px 0px, rgb(0, 0, 0) -1.78435px -3.57996px 0px, rgb(0, 0, 0) -0.843183px -3.91012px 0px, rgb(0, 0, 0) 0.150409px -3.99717px 0px, rgb(0, 0, 0) 1.13465px -3.8357px 0px, rgb(0, 0, 0) 2.04834px -3.43574px 0px, rgb(0, 0, 0) 2.83468px -2.82216px 0px, rgb(0, 0, 0) 3.44477px -2.03312px 0px, rgb(0, 0, 0) 3.84068px -1.11766px 0px, rgb(0, 0, 0) 3.9978px -0.132717px 0px;
 }
+
+
+.ennemis>h3,.amis>h3{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.ennemis>div,.amis>div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.amis>div>img,.ennemis>div>img {
+
+  scale: 0.9;
+  margin-top: -0.5em;
+}
+.amis>div>img:nth-child(1),
+.amis>div>img:nth-child(3),
+.ennemis>div>img:nth-child(1),
+.ennemis>div>img:nth-child(3){
+    margin-right: 6em;
+}
+@media screen and (min-width:380px) {
+    .ennemis>h3,.amis>h3{
+        margin-top: 0.8em;
+    }
+    
+    .amis>div>img,.ennemis>div>img {
+
+        scale: 1.2;
+        margin-top: 1.1em;
+        margin-bottom: 0.5em;
+      }
+      .amis>div>img:nth-child(1),
+      .amis>div>img:nth-child(3),
+      .ennemis>div>img:nth-child(1),
+      .ennemis>div>img:nth-child(3){
+          margin-right: 6em;
+      } 
+    
+}
+@media screen and (min-width:700px) {
+
+    .ennemis>h3,.amis>h3{
+        margin-top: 0.6em;
+    }
+    .amis>div,.ennemis>div {
+height: 90%;
+padding-bottom: 0.5em;
+    
+        
+    }
+    .amis>div>img,.ennemis>div>img {
+        justify-self: center;
+        scale: 1.2;
+        width: auto;
+        height: 100%;
+        padding-bottom: 2.5em;
+
+      }
+      .amis>div>img:nth-child(1),
+      .amis>div>img:nth-child(3),
+      .ennemis>div>img:nth-child(1),
+      .ennemis>div>img:nth-child(3){
+          justify-self: center;
+      } 
+    
+    
+}
+@media screen and (min-width:1200px){
+    .ennemis>div,.amis>div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-content: center;
+        justify-content: center;
+        
+    }
+    
+    .ennemis>h3,.amis>h3{
+        margin-top: 2em;
+    }
+    .amis>div,.ennemis>div {
+    height: 90%;
+    margin-top: 4.5em;
+    }
+    .amis>div>img,.ennemis>div>img {
+        justify-self: center;
+        scale: 1.7;
+        width: auto;
+        height: 100%;
+        padding-bottom: 5em;
+
+      }  .amis>div>img:nth-child(1),
+      .amis>div>img:nth-child(3),
+      .ennemis>div>img:nth-child(1),
+      .ennemis>div>img:nth-child(3){
+          margin-right: 0em;
+      } 
+}
+
+
+    /* end css */
