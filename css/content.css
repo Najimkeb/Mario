@@ -70,12 +70,12 @@ form>div {
 input,
 select,
 textarea {
-    padding: 1em;
+    padding: 0.3em;
     margin-bottom: 1em;
 }
 
 label {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.3em;
 }
 
 textarea {
@@ -105,158 +105,161 @@ input[type="submit"] {
 
     }
 
-}
+    /* end contact css */
 
+    /*Card 1 start */
 
-/* end contact css */
-
-/*Card 1 start */
-
-.logo {
-    display: flex;
-    margin: auto;
-    padding-top: 4rem;
-    justify-content: center;
-}
-
-.logo>img {
-    padding: 1rem;
-    width: 40%;
-    height: 40%;
-    animation-name: pulse;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-
-.swipe {
-    display: flex;
-    font-size: 3vh;
-    color: rgb(255, 230, 0);
-    font-size: 1em;
-    text-shadow: rgb(0, 0, 0) 4px 0px 0px, rgb(0, 0, 0) 3.87565px 0.989616px 0px, rgb(0, 0, 0) 3.51033px 1.9177px 0px, rgb(0, 0, 0) 2.92676px 2.72656px 0px, rgb(0, 0, 0) 2.16121px 3.36588px 0px, rgb(0, 0, 0) 1.26129px 3.79594px 0px, rgb(0, 0, 0) 0.282949px 3.98998px 0px, rgb(0, 0, 0) -0.712984px 3.93594px 0px, rgb(0, 0, 0) -1.66459px 3.63719px 0px, rgb(0, 0, 0) -2.51269px 3.11229px 0px, rgb(0, 0, 0) -3.20457px 2.39389px 0px, rgb(0, 0, 0) -3.69721px 1.52664px 0px, rgb(0, 0, 0) -3.95997px 0.56448px 0px, rgb(0, 0, 0) -3.97652px -0.432781px 0px, rgb(0, 0, 0) -3.74583px -1.40313px 0px, rgb(0, 0, 0) -3.28224px -2.28625px 0px, rgb(0, 0, 0) -2.61457px -3.02721px 0px, rgb(0, 0, 0) -1.78435px -3.57996px 0px, rgb(0, 0, 0) -0.843183px -3.91012px 0px, rgb(0, 0, 0) 0.150409px -3.99717px 0px, rgb(0, 0, 0) 1.13465px -3.8357px 0px, rgb(0, 0, 0) 2.04834px -3.43574px 0px, rgb(0, 0, 0) 2.83468px -2.82216px 0px, rgb(0, 0, 0) 3.44477px -2.03312px 0px, rgb(0, 0, 0) 3.84068px -1.11766px 0px, rgb(0, 0, 0) 3.9978px -0.132717px 0px;
-    text-align: center;
-    justify-content: center;
-    padding-top: 3vh;
-}
-
-.fleche {
-    display: flex;
-    margin-top: 2vh;
-    justify-content: center;
-    animation-name: slide;
-    animation-duration: 2s;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
-}
-
-.fleche>img {
-    width: 10%;
-    height: 10%;
-    padding-top: 1vh;
-}
-
-@keyframes slide {
-    from {
-        margin-left: 20%;
-        width: 100%;
-    }
-
-    to {
-        margin-right: 100%;
-        width: 100%;
-    }
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1, 1);
-    }
-
-    50% {
-        transform: scale(1.05, 1.05);
-    }
-
-    100% {
-        transform: scale(1, 1);
-    }
-}
-
-
-@media screen and (max-width: 480px) {
     .logo {
         display: flex;
         margin: auto;
-        justify-content: center;
         padding-top: 4rem;
+        justify-content: center;
     }
 
     .logo>img {
-        width: 100%;
-        height: 100%;
+        padding: 1rem;
+        width: 40%;
+        height: 40%;
+        animation-name: pulse;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
     }
 
     .swipe {
         display: flex;
+        font-size: 3vh;
         color: rgb(255, 230, 0);
-        font-size: 2vh;
+        font-size: 1em;
+        text-shadow: rgb(0, 0, 0) 4px 0px 0px, rgb(0, 0, 0) 3.87565px 0.989616px 0px, rgb(0, 0, 0) 3.51033px 1.9177px 0px, rgb(0, 0, 0) 2.92676px 2.72656px 0px, rgb(0, 0, 0) 2.16121px 3.36588px 0px, rgb(0, 0, 0) 1.26129px 3.79594px 0px, rgb(0, 0, 0) 0.282949px 3.98998px 0px, rgb(0, 0, 0) -0.712984px 3.93594px 0px, rgb(0, 0, 0) -1.66459px 3.63719px 0px, rgb(0, 0, 0) -2.51269px 3.11229px 0px, rgb(0, 0, 0) -3.20457px 2.39389px 0px, rgb(0, 0, 0) -3.69721px 1.52664px 0px, rgb(0, 0, 0) -3.95997px 0.56448px 0px, rgb(0, 0, 0) -3.97652px -0.432781px 0px, rgb(0, 0, 0) -3.74583px -1.40313px 0px, rgb(0, 0, 0) -3.28224px -2.28625px 0px, rgb(0, 0, 0) -2.61457px -3.02721px 0px, rgb(0, 0, 0) -1.78435px -3.57996px 0px, rgb(0, 0, 0) -0.843183px -3.91012px 0px, rgb(0, 0, 0) 0.150409px -3.99717px 0px, rgb(0, 0, 0) 1.13465px -3.8357px 0px, rgb(0, 0, 0) 2.04834px -3.43574px 0px, rgb(0, 0, 0) 2.83468px -2.82216px 0px, rgb(0, 0, 0) 3.44477px -2.03312px 0px, rgb(0, 0, 0) 3.84068px -1.11766px 0px, rgb(0, 0, 0) 3.9978px -0.132717px 0px;
         text-align: center;
         justify-content: center;
-        padding-top: 2vh;
+        padding-top: 3vh;
     }
 
     .fleche {
         display: flex;
         margin-top: 2vh;
         justify-content: center;
+        animation-name: slide;
+        animation-duration: 2s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
     }
 
     .fleche>img {
-        width: 40%;
-        height: 40%;
-        padding-top: 5vh;
+        width: 10%;
+        height: 10%;
+        padding-top: 1vh;
+        transition: .5s ease-in-out;
     }
 
-}
+    .fleche>img:active {
+        transform: scale(0.9);
+    }
 
-/* card 1 End */
+    @keyframes slide {
+        from {
+            margin-left: 20%;
+            width: 100%;
+        }
 
-/* card 2 start */
+        to {
+            margin-right: 100%;
+            width: 100%;
+        }
+    }
 
-.biographie {
-    padding-top: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-bottom: auto;
-}
+    @keyframes pulse {
+        0% {
+            transform: scale(1, 1);
+        }
 
-.biographie>img {
-    padding-top: 2rem;
-    width: 30%;
-    height: 30%;
-}
+        50% {
+            transform: scale(1.05, 1.05);
+        }
 
-.biographie>p {
-    width: 30%;
-    margin: 2rem;
-}
+        100% {
+            transform: scale(1, 1);
+        }
+    }
 
-@media screen and (max-width: 480px) {
+
+    @media screen and (max-width: 480px) {
+        .logo {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            padding-top: 4rem;
+        }
+
+        .logo>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swipe {
+            display: flex;
+            color: rgb(255, 230, 0);
+            font-size: 2vh;
+            text-align: center;
+            justify-content: center;
+            padding-top: 2vh;
+        }
+
+        .fleche {
+            display: flex;
+            margin-top: 2vh;
+            justify-content: center;
+        }
+
+        .fleche>img {
+            width: 40%;
+            height: 40%;
+            padding-top: 5vh;
+        }
+
+    }
+
+    /* card 1 End */
+
+    /* card 2 start */
 
     .biographie {
+        padding-top: auto;
         display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        justify-items: center;
+        padding-bottom: auto;
     }
 
     .biographie>img {
-        width: 70%;
-        height: 70%;
+        padding-top: 2rem;
+        width: 30%;
+        height: 30%;
     }
 
     .biographie>p {
-        width: auto;
+        width: 30%;
+        margin: 2rem;
     }
 
+    @media screen and (max-width: 480px) {
+
+        .biographie {
+            display: flex;
+            text-align: center;
+            justify-items: center;
+        }
+
+        .biographie>img {
+            width: 70%;
+            height: 70%;
+        }
+
+        .biographie>p {
+            width: auto;
+        }
+
+    }
 }

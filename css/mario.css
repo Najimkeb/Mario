@@ -23,6 +23,7 @@
         background-repeat: no-repeat;
         background-image: url(../img/mario/spriteMario.png);
         background-position: -128px 0px;
+        transform: scale(2)translateX(30px);
 
 
 }
@@ -32,6 +33,7 @@
         background-repeat: no-repeat;
         background-image: url(../img/mario/spriteMario.png);
         background-position: -128px -70px;
+        transform: scale(2)translateX(30px);
 
 }
 
@@ -54,10 +56,12 @@
         background-position: center center;
         background-image: url(../img/mario/MarioUpWalk.gif);
         transform: scaleX(-1);
+        -moz-transform: scaleX(-1);
     }.normal.SayHello{
         background-image: url(../img/mario/spriteMario.png);
         background-position: -48px -110px;
         transform: scale(2)translateX(30px);
+        -moz-transform: scale(2)translateX(30px);
     }
 
 
@@ -110,4 +114,28 @@
     bottom: -7px;
     width: 10px;
     height: 10px;
+}
+
+
+
+.coin[disable="false"]{
+    height:100%;
+  width:36px;
+  transform-style:preserve-3d;
+  background-image: url("../img/mario/marioCoin2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: flip 1.2s infinite;
+
+}
+.coin[disable="true"]{
+    transform: scale(5);
+}
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    60% {
+        transform: rotateY(180deg);
+    }
 }
