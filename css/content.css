@@ -1,4 +1,10 @@
+@font-face {
+    font-family: Mario_titre;
+    src: url(./font/SuperMario256.ttf) format("truetype");
+}
+
 /* Background Card */
+
 div.content {
     background: rgba(255, 255, 255, 0.876);
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2),
@@ -90,7 +96,7 @@ input[type="submit"] {
     background-color: gold;
 }
 
-@media screen and (min-width:900px) {
+@media screen and (min-width:480px) {
     form {
         display: grid;
         gap: 2em;
@@ -176,7 +182,7 @@ input[type="submit"] {
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 480px) {
     .logo {
         display: flex;
         margin: auto;
@@ -213,3 +219,44 @@ input[type="submit"] {
 }
 
 /* card 1 End */
+
+/* card 2 start */
+
+.biographie {
+    padding-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: auto;
+}
+
+.biographie>img {
+    padding-top: 2rem;
+    width: 30%;
+    height: 30%;
+}
+
+.biographie>p {
+    width: 30%;
+    margin: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+
+    .biographie {
+        display: flex;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .biographie>img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .biographie>p {
+        width: auto;
+    }
+
+}
