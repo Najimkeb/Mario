@@ -226,34 +226,57 @@ function setMessage(event) {
   Mario.classList.add("SayHello");
   event.preventDefault();
   const fname = document.getElementById("fname");
+  const country = document.getElementById('country').value
+
+  let Message = "Merci d'avoir Joué "
+  switch (country) {
+    case "2":
+      Message = "Thanks for Playing "
+      break;
+    case "3":
+      Message = "Danke fürs Spielen "
+      break;
+    case "4":
+      Message = "Gracias por jugar "
+      break;
+    case "5":
+      Message = "Grazie per aver giocato "
+      break;
+
+    default:
+      Message = "Merci d'avoir Joué "
+      break;
+  }
+
   const EndMessageValue = document.getElementById("EndMessageValue");
-  
-  if(window.innerWidth > 650){
-    EndMessageValue.innerText = "Merci d'avoir Joué " + fname.value + "!\n"
-  }else{
+
+  if (window.innerWidth > 650) {
+    EndMessageValue.innerText = Message + fname.value + "!\n"
+  } else {
     const MobileMessage = "Voici mon insta!! "
     const insta = document.createElement('a')
-    insta.href="#"
+    insta.href = "https://www.instagram.com/mariobrossdu31/"
     insta.innerText = "Mario Toulouse"
     insta.className = "instaBulle"
-    EndMessageValue.innerText = "Merci d'avoir Joué " + fname.value + "!\n"+MobileMessage;
+
+    EndMessageValue.innerText = Message + fname.value + "!\n" + MobileMessage;
     EndMessageValue.appendChild(insta);
   }
   EndMessage.classList.add("active");
-setTimeout(()=>{
-  EndMessage.classList.remove("active");
-},2000)
-
-  
-  
-
-  
+  setTimeout(() => {
+    EndMessage.classList.remove("active");
+  }, 2000)
 
 
 
 
 
-  
+
+
+
+
+
+
 }
 
 function zoom(event) {

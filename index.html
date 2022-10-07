@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="./css/bgStyle.css" />
   <link rel="stylesheet" href="./css/content.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -32,8 +34,12 @@
         <div class="contentMenu" tabindex="1">
           <h2 class="logo"><img src="./img/logo.svg"></h2>
           <p class="swipe">Swipe à droite pour commencer !</p>
-          <div class=" fleche"><img src="./img/fleche.svg"></div>
-        </div>
+          <div class=" fleche" onclick="playGames()">
+            <audio controls>
+              <source src="./sound/mario.ogg" type="audio/ogg">
+            </audio>
+            <img src="./img/fleche.svg">
+          </div>
       </section>
       <!-- Start Section 2 -->
       <section id="Card2" class="card" tabindex="2">
@@ -50,7 +56,7 @@
       <section id="Card3" class="card" tabindex="3">
         <div class="content">
           <h2 class="titles">Univers</h2>
-          
+
           <div class="ennemis">
             <h3>Ennemis</h3>
             <div>
@@ -65,52 +71,83 @@
             <div>
               <img class="active imgCarouselle" src="./img/imgCartouche/Cartouche4.svg" alt="cartouche peach">
               <img src="./img/imgCartouche/Cartouche5.svg" alt="cartouche luigi ">
-              <img src="./img/imgCartouche/Cartouche7.svg" alt="cartouche yoshi">
-              <img src="./img/imgCartouche/Cartouche8.svg" alt="cartouche toad">
+              <img src="./img/imgCartouche/Frame.svg" alt="cartouche yoshi">
+              <img src="./img/imgCartouche/Toad (1).svg" alt="cartouche toad">
             </div>
-        </div>
+          </div>
 
       </section>
       <section id="Card4" class="card" tabindex="4">
         <div class="content">
-          <h2 class="titles">Card 4</h2>
-          <p>Card 4 content</p>
+          <h2 class="titles">JeuxVideo Graphie</h2>
+          <div id="carousel">
+
+            <div class="hideLeft">
+              <img src="https://mario.nintendo.com/static/72fe74d5ff8b3a74c378ee19b730e26c/8bbb0/art.jpg">
+            </div>
+
+            <div class="prevLeftSecond">
+              <img src="https://mario.nintendo.com/static/edaae21ccb00cd1f0751aa87acf6e8cf/8bbb0/art.jpg">
+            </div>
+
+            <div class="prev">
+              <img src="https://mario.nintendo.com/static/331bf968f381da6d12aaf23d166d7432/8bbb0/art.jpg">
+            </div>
+
+            <div class="selected">
+              <img src="https://mario.nintendo.com/static/3c873238d3e45bd07b5cd4309a2b19ea/8bbb0/art.jpg">
+            </div>
+
+            <div class="next">
+              <img src="https://mario.nintendo.com/static/032eb92880ce69c2171f52e5bf23012e/8bbb0/art.jpg"">
+           </div>
+     
+           <div class=" nextRightSecond">
+              <img src="https://mario.nintendo.com/static/82ab93ad6f077539869943a7d6099325/8bbb0/art.jpg">
+            </div>
+
+            <div class="hideRight">
+              <img src="https://mario.nintendo.com/static/f26e48d5faaa09bd3f67a87714860d22/8bbb0/art.jpg">
+            </div>
+
+          </div>
         </div>
       </section>
       <!-- Start Section 4 -->
       <section id="Card5" class="card" tabindex="5">
         <div class="content">
           <h2 class="titles">Contact</h2>
-            <form action="#" onsubmit="setMessage(event)">
-              <div>
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <form action="#" onsubmit="setMessage(event)">
+            <div>
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                <label for="email">Enter your email:</label>
-                <input type="email" id="email" name="email">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="email">Enter your email:</label>
+              <input type="email" id="email" name="email">
 
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                  <option value="0">Select Country:</option>
-                  <option value="1">France</option>
-                  <option value="2">Royaume-Uni</option>
-                  <option value="3">Allemagne</option>
-                  <option value="4">Espagne</option>
-                  <option value="6">Italie</option>
-                </select>
-                <div class="FooterForm">
-                  <span class="Insta">Mon Insta !!</span>
-                  <a href="#"><img src="./img/instag.png" alt="Instagram Links"></a>
-                </div>
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="0">Select Country:</option>
+                <option value="1">France</option>
+                <option value="2">Royaume-Uni</option>
+                <option value="3">Allemagne</option>
+                <option value="4">Espagne</option>
+                <option value="5">Italie</option>
+              </select>
+              <div class="FooterForm">
+                <span class="Insta">Mon Insta !!</span>
+                <a href="https://www.instagram.com/mariobrossdu31/"><img src="./img/instag.png"
+                    alt="Instagram Links"></a>
               </div>
-              <div>
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
-                <input type="submit" value="Submit" id="submit-button" />
-              </div>
-            </form>
+            </div>
+            <div>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+              <input type="submit" value="Submit" id="submit-button" />
+            </div>
+          </form>
         </div>
       </section>
       <!-- End Section -->
@@ -120,7 +157,7 @@
         <div id="EndMessage" class="bulle">
           <span id="EndMessageValue">
             Merci d'avoir Joué !
-            </span>
+          </span>
         </div>
       </div>
       <div id="Champignon" class=""></div>
@@ -129,6 +166,7 @@
   </div>
 
   <script src="./script.js"></script>
+  <script src="./carouselle.js"></script>
 </body>
 
 </html>
