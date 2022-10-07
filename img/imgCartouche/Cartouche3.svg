@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="91" fill="none" viewBox="0 0 96 91">
+  <g class="Group 76">
+    <g class="Group 55">
+      <path fill="#BDBBBC" d="M13 1.5h82v74h-5v1h-1v13H13v-88Z" class="Rectangle 88" opacity=".5"/>
+      <path fill="#A1A09E" d="M4 2.5H2v72h3v1h1v1h1v12h5v-86H8v1H4v-1Z" class="Vector 27"/>
+      <path fill="#5C5B59" d="M1 1.5H0v74h1v-74Z" class="Vector 10"/>
+      <path fill="#BDBBBC" d="M13 1.5h-1v88h1v-88Z" class="Vector 18"/>
+      <path fill="#BDBBBC" d="M2 1.5H1v74h1v-74Z" class="Vector 19"/>
+      <path fill="#BDBBBC" d="M5 75.5H2v-1h3v1Z" class="Vector 20"/>
+      <path fill="#BDBBBC" d="M6 76.5H5v-1h1v1Z" class="Vector 21"/>
+      <path fill="#BDBBBC" d="M12 89.5H7v-1h5v1Z" class="Vector 23"/>
+      <path fill="#BDBBBC" d="M7 89.5H6v-13h1v13Z" class="Vector 22"/>
+      <path fill="#5C5B59" d="M5 75.5H1v1h4v-1Z" class="Vector 11"/>
+      <path fill="#5C5B59" d="M6 76.5H5v13h1v-13Z" class="Vector 12"/>
+      <path fill="#5C5B59" d="M14 78.5h-1v11h1v-11Z" class="Vector 38"/>
+      <path fill="#5C5B59" d="M30 78.5h-1v11h1v-11Z" class="Vector 39"/>
+      <path fill="#5C5B59" d="M64 89.5H6v1h58v-1Z" class="Vector 13"/>
+      <path fill="#5C5B59" d="M32 .5h-2v1h2v-1Z" class="Vector 14"/>
+      <path fill="#C1AA14" d="M33 .5h-1v1h1v-1Z" class="Vector 34"/>
+      <path fill="#C1AA14" d="M83 .5h-1v1h1v-1Z" class="Vector 36"/>
+      <path fill="#DEC218" d="M82 .5H33v1h49v-1Z" class="Vector 35"/>
+      <path fill="#5C5B59" d="M87 .5h-4v1h4v-1Z" class="Vector 28"/>
+      <path fill="#5C5B59" d="M91 1.5h-4v1h4v-1Z" class="Vector 37"/>
+      <path fill="#5C5B59" d="M95 .5h-4v1h4v-1Z" class="Vector 29"/>
+      <path fill="#5C5B59" d="M96 1.5h-1v74h1v-74Z" class="Vector 30"/>
+      <path fill="#5C5B59" d="M4 .5H1v1h3v-1Z" class="Vector 15"/>
+      <path fill="#5C5B59" d="M13 .5H8v1h5v-1Z" class="Vector 16"/>
+      <path fill="#5C5B59" d="M8 1.5H4v1h4v-1Z" class="Vector 17"/>
+      <path fill="#BDBBBC" d="M4 2.5H2v-1h2v1Z" class="Vector 24"/>
+      <path fill="#BDBBBC" d="M12 2.5H8v-1h4v1Z" class="Vector 25"/>
+      <path fill="#BDBBBC" d="M8 3.5H4v-1h4v1Z" class="Vector 26"/>
+      <path fill="#5C5B59" d="M95 76.5h-5v-1h5v1Z" class="Vector 31"/>
+      <path fill="#5C5B59" d="M90 89.5h-1v-13h1v13Z" class="Vector 32"/>
+      <path fill="#5C5B59" d="M89 90.5H64v-1h25v1Z" class="Vector 33"/>
+      <path fill="#8B8B8B" d="M87 2.5h-3v62h-1v1H32v-1h-1v24h57v-13h1v-1h5v-72h-3v1h-4v-1Z" class="Union"/>
+      <g class="Group 42">
+        <path fill="#393738" d="M13 1.5h17v13H13z" class="Rectangle 89"/>
+        <path fill="#646364" d="M14 2.5h15v1H14z" class="Rectangle 90"/>
+        <path fill="#646364" d="M14 6.5h15v1H14z" class="Rectangle 92"/>
+        <path fill="#646364" d="M14 10.5h15v1H14z" class="Rectangle 94"/>
+        <path fill="#A1A09E" d="M14 3.5h15v1H14z" class="Rectangle 91"/>
+        <path fill="#A1A09E" d="M14 7.5h15v1H14z" class="Rectangle 93"/>
+        <path fill="#A1A09E" d="M14 11.5h15v1H14z" class="Rectangle 95"/>
+      </g>
+      <g class="Group 43">
+        <path fill="#5C5B59" d="M13 14.5h17v8H13z" class="Rectangle 96"/>
+        <path fill="#8A8A8A" d="M14 14.5h15v1H14z" class="Rectangle 94"/>
+        <path fill="#8A8A8A" d="M14 18.5h15v1H14z" class="Rectangle 97"/>
+        <path fill="#BDBBBC" d="M14 15.5h15v1H14z" class="Rectangle 95"/>
+        <path fill="#BDBBBC" d="M14 19.5h15v1H14z" class="Rectangle 98"/>
+      </g>
+      <g class="Group 45">
+        <path fill="#5C5B59" d="M13 30.5h17v8H13z" class="Rectangle 96"/>
+        <path fill="#8A8A8A" d="M14 30.5h15v1H14z" class="Rectangle 94"/>
+        <path fill="#8A8A8A" d="M14 34.5h15v1H14z" class="Rectangle 97"/>
+        <path fill="#BDBBBC" d="M14 31.5h15v1H14z" class="Rectangle 95"/>
+        <path fill="#BDBBBC" d="M14 35.5h15v1H14z" class="Rectangle 98"/>
+      </g>
+      <g class="Group 47">
+        <path fill="#5C5B59" d="M13 46.5h17v8H13z" class="Rectangle 96"/>
+        <path fill="#8A8A8A" d="M14 46.5h15v1H14z" class="Rectangle 94"/>
+        <path fill="#8A8A8A" d="M14 50.5h15v1H14z" class="Rectangle 97"/>
+        <path fill="#BDBBBC" d="M14 47.5h15v1H14z" class="Rectangle 95"/>
+        <path fill="#BDBBBC" d="M14 51.5h15v1H14z" class="Rectangle 98"/>
+      </g>
+      <g class="Group 49">
+        <path fill="#5C5B59" d="M13 62.5h17v8H13z" class="Rectangle 96"/>
+        <path fill="#8A8A8A" d="M14 62.5h15v1H14z" class="Rectangle 94"/>
+        <path fill="#8A8A8A" d="M14 66.5h15v1H14z" class="Rectangle 97"/>
+        <path fill="#BDBBBC" d="M14 63.5h15v1H14z" class="Rectangle 95"/>
+        <path fill="#BDBBBC" d="M14 67.5h15v1H14z" class="Rectangle 98"/>
+      </g>
+      <g class="Group 44">
+        <path fill="#5C5B59" d="M13 22.5h17v8H13z" class="Rectangle 96"/>
+        <path fill="#8A8A8A" d="M14 22.5h15v1H14z" class="Rectangle 94"/>
+        <path fill="#8A8A8A" d="M14 26.5h15v1H14z" class="Rectangle 97"/>
+        <path fill="#BDBBBC" d="M14 23.5h15v1H14z" class="Rectangle 95"/>
+        <path fill="#BDBBBC" d="M14 27.5h15v1H14z" class="Rectangle 98"/>
+      </g>
+      <g class="Group 46">
+        <path fill="#5C5B59" d="M13 38.5h17v8H13z" class="Rectangle 96"/>
+        <path fill="#8A8A8A" d="M14 38.5h15v1H14z" class="Rectangle 94"/>
+        <path fill="#8A8A8A" d="M14 42.5h15v1H14z" class="Rectangle 97"/>
+        <path fill="#BDBBBC" d="M14 39.5h15v1H14z" class="Rectangle 95"/>
+        <path fill="#BDBBBC" d="M14 43.5h15v1H14z" class="Rectangle 98"/>
+      </g>
+      <g class="Group 48">
+        <path fill="#5C5B59" d="M13 54.5h17v8H13z" class="Rectangle 96"/>
+        <path fill="#8A8A8A" d="M14 54.5h15v1H14z" class="Rectangle 94"/>
+        <path fill="#8A8A8A" d="M14 58.5h15v1H14z" class="Rectangle 97"/>
+        <path fill="#BDBBBC" d="M14 55.5h15v1H14z" class="Rectangle 95"/>
+        <path fill="#BDBBBC" d="M14 59.5h15v1H14z" class="Rectangle 98"/>
+      </g>
+      <g class="Group 50">
+        <path fill="#5C5B59" d="M13 70.5h17v8H13z" class="Rectangle 96"/>
+        <path fill="#8A8A8A" d="M14 70.5h15v1H14z" class="Rectangle 94"/>
+        <path fill="#8A8A8A" d="M14 74.5h15v1H14z" class="Rectangle 97"/>
+        <path fill="#BDBBBC" d="M14 71.5h15v1H14z" class="Rectangle 95"/>
+        <path fill="#BDBBBC" d="M14 75.5h15v1H14z" class="Rectangle 98"/>
+      </g>
+      <path fill="#8B8B8B" d="M14 78.5h15v11H14z" class="Rectangle 99"/>
+      <path fill="url(#a)" d="M32 .75h51v62.984h-1v1.016H33v-1.016h-1V.75Z" class="Rectangle 103"/>
+      <g class="Group 52">
+        <g class="Group 51">
+          <path fill="#BDBBBC" d="M40 75.5h1v1h-1z" class="Rectangle 102"/>
+          <path fill="#BDBBBC" d="M41 74.5h1v1h-1z" class="Rectangle 103"/>
+          <path fill="#BDBBBC" d="M39 74.5h1v1h-1z" class="Rectangle 110"/>
+          <path fill="#BDBBBC" d="M38 73.5h1v1h-1z" class="Rectangle 111"/>
+          <path fill="#BDBBBC" d="M37 72.5h1v1h-1z" class="Rectangle 112"/>
+          <path fill="#BDBBBC" d="M36 71.5h1v1h-1z" class="Rectangle 113"/>
+          <path fill="#BDBBBC" d="M35 70.5h1v1h-1z" class="Rectangle 114"/>
+          <path fill="#BDBBBC" d="M42 73.5h1v1h-1z" class="Rectangle 104"/>
+          <path fill="#BDBBBC" d="M43 72.5h1v1h-1z" class="Rectangle 105"/>
+          <path fill="#BDBBBC" d="M44 71.5h1v1h-1z" class="Rectangle 106"/>
+          <path fill="#BDBBBC" d="M45 70.5h1v1h-1z" class="Rectangle 107"/>
+          <path fill="#BDBBBC" d="M36 69.5h9v1h-9z" class="Rectangle 108"/>
+          <path fill="#5C5B59" d="M45 70.5h-9v1h1v1h1v1h1v1h1v1h1v-1h1v-1h1v-1h1v-1h1v-1Z" class="Vector 40"/>
+        </g>
+      </g>
+    </g>
+    <g class="Group 70">
+      <path fill="#181818" d="M38.013 57.625v-.875h-.875v-.875h-.875V53.25h.875v-.875h.875V51.5h4.375v.875h-3.5v.875h-.875v2.625h.875v.875h1.75V55h-.875v-.875h2.625v3.5h-4.375Zm6.02 0v-.875h-.876v-2.625h.876v-.875h4.374v.875h.876v2.625h-.876v.875h-4.374Zm.874-.875h2.626v-2.625h-2.626v2.625Zm6.02.875v-.875h-.874v-2.625h.875v-.875h4.375v.875h.875v2.625h-.875v.875h-4.375Zm.876-.875h2.625v-2.625h-2.625v2.625Zm5.145.875V53.25h5.25v.875h.874v3.5h-1.75v-3.5h-.875v3.5h-1.75v-3.5h-.875v3.5h-.875Zm7.77 0v-.875h-.876V51.5h1.75v1.75h3.5v.875h.876v2.625h-.876v.875h-4.374Zm.874-.875h2.626v-2.625h-2.626v2.625Zm6.02.875v-.875h-.874v-.875h.874V55h3.5v-.875h-3.5v-.875h4.376v.875h.874v3.5h-5.25Zm.876-.875h2.624v-.875h-2.624v.875Z" class="Goomba"/>
+      <g class="enemy/goomba">
+        <path fill="#FFAE4C" d="M52.875 14.25h7.25v5.25h3.625v1.75h5.438V30H63.75v7h-3.625v1.75h-7.25V37H49.25v-7h-5.438v-8.75h5.438V19.5h3.625v-5.25ZM45.625 37h-1.813v1.75h1.813V37Zm21.75-1.75h1.813V37h-1.813v-1.75Z" class="orange"/>
+        <g class="black">
+          <path fill="#000" d="M52.875 12.5h7.25v1.75h-7.25V12.5Zm1.813 8.75v3.5h-1.813v-3.5h1.813ZM49.25 26.5h14.5v1.75h-14.5V26.5Z"/>
+          <path fill="#000" fill-rule="evenodd" d="M54.688 19.5V16h-1.813v-1.75H49.25V16h-1.813v1.75h1.813v1.75h-1.813v1.75h-3.624V23H42v5.25h1.813V30h1.812v1.75h1.813v3.5h-3.626V37H42v3.5h10.875V37h-1.813v-1.75H49.25V33.5h1.813v-1.75h9.062v1.75h1.813v1.75h-1.813v3.5H71v-3.5h-1.813V33.5h-7.25v-1.75h5.438V30h1.813v-1.75H71V23h-1.813v-1.75h-3.624V19.5H63.75v-1.75h1.813V16H63.75v-1.75h-3.625V16h-1.813v3.5h-3.624Zm0 1.75V19.5h-1.813v-1.75h-1.813v1.75H49.25v1.75h-1.813V23h-3.624v5.25h1.812V30h21.75v-1.75h1.813V23h-3.626v-1.75H63.75V19.5h-1.813v-1.75h-1.812v1.75h-1.813v1.75h-3.624Zm3.624 0h1.813v3.5h-1.813v-3.5Zm10.876 14V37h-1.813v-1.75h1.813Z" clip-rule="evenodd"/>
+          <path fill="#000" d="M43.813 37h1.812v1.75h-1.813V37Z"/>
+        </g>
+        <path fill="#FFBAAA" d="M51.063 17.75h1.812v1.75h1.813v1.75h-1.813v3.5h-1.813v-7Zm9.062 0h1.813v7h-1.813v-3.5h-1.813V19.5h1.813v-1.75Zm5.438 8.75H63.75V30h1.813v-3.5Zm-18.125 0h1.812V30h-1.813v-3.5Zm3.625 5.25v3.5h1.812V37h7.25v-1.75h1.813V33.5h-1.813v-1.75h-9.063Z" class="peach"/>
+      </g>
+    </g>
+  </g>
+  <defs>
+    <linearGradient id="a" x1="57.5" x2="57.5" y1=".75" y2="64.75" class="a" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FD0"/>
+      <stop offset="1" stop-color="#C58E00" stop-opacity=".58"/>
+    </linearGradient>
+  </defs>
+</svg>

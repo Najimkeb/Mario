@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Mario">
+</head>
+<style>
+/*@import url(./css/mario.css);*/
+.Loop{
+    image-rendering: pixelated;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 150px;
+    display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        gap: 5em;
+
+    justify-content: center;
+    border: 1px solid black;
+    background: linear-gradient(0deg, rgb(0, 255, 76) 0%, rgb(15, 179, 56) 30%, rgb(0, 47, 255) 30%, rgb(0, 204, 255) 100%);
+    
+}
+
+.little{
+    
+    height: 20px;
+        width: 20px;
+        background-repeat: no-repeat;
+        background-image: url(./img/mario/spriteMario.png);
+        background-position: -128px 0px;
+        transform: translate(0px, -6px);
+
+}
+.normal{
+    height: 40px;
+        width: 20px;
+        background-repeat: no-repeat;
+        background-image: url(./img/mario/spriteMario.png);
+        background-position: -128px -70px;
+
+}
+
+
+
+
+
+    .little.runLeft{
+        background-position: center center;
+        background-image: url(./img/mario/MarioLtWalk.gif);
+    }.little.runRight{
+        background-position: center center;
+        background-image: url(./img/mario/MarioLtWalk.gif);
+        transform: translate(0px, -6px)scaleX(-1);
+    }
+
+    .normal.runLeft{
+        background-position: center center;
+        background-image: url(./img/mario/MarioUpWalk.gif);
+    }.normal.runRight{
+        background-position: center center;
+        background-image: url(./img/mario/MarioUpWalk.gif);
+        transform: scaleX(-1);
+    }.normal.SayHello{
+        background-image: url(./img/mario/spriteMario.png);
+        background-position: -48px -110px;
+    }
+
+
+
+   
+.bulle{
+    max-width: 52ch;
+    border: solid 2px black;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    position: relative;
+}.bulle::after{
+    content: "";
+    position: absolute;
+
+    border-style: solid;
+    border-width: 2px;
+    background: rgb(255, 255, 255);
+    border-color: transparent transparent black black;
+    transform: rotate(-45deg);
+    right: 9px;
+    bottom: -7.4px;
+    width: 10px;
+    height: 10px;
+}
+    
+       
+  
+  
+  .Champignon{
+    display: block;
+   height: 20px;
+   width: 20px;
+    background-image: url(/img/mario/spriteMarioDecor.gif);
+    background-repeat: no-repeat;
+    background-position: -210px 0;
+
+  } 
+
+
+
+
+.coin{
+    height:36px;
+  width:36px;
+  transform-style:preserve-3d;
+  background-image: url("./img/mario/marioCoin2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: flip 1.2s infinite;
+
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    60% {
+        transform: rotateY(180deg);
+    }
+}
+    
+</style>
+<body>
+    <!-- https://www.youtube.com/watch?v=3Tc_Ek0ASSA&ab_channel=Typhlosion4President -->
+    <div class="Loop">
+        <div class="mario little"></div>
+    
+        <div class="mario normal SayHello"></div>
+    
+    </div>
+    <button onclick="(()=>{
+
+        document.querySelector('.mario'+'.little').classList.toggle('runRight');
+        //document.querySelector('.mario'+'.normal').classList.toggle('runRight');
+    })()">Run Right</button>
+    <button onclick="(()=>{
+
+        document.querySelector('.mario'+'.little').classList.toggle('runLeft');
+        //document.querySelector('.mario'+'.normal').classList.toggle('runLeft');
+    })()">Run Left</button>
+    <div id="EndMessage" class="bulle">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci mollitia facilis reprehenderit quisquam nihil voluptate sed animi ad, vitae consequatur aperiam? Repellendus saepe quis culpa tempora? Voluptas perferendis velit quae!
+        </p>
+    </div>
+    <div class="Champignon"></div>
+
+    <div class="flipper-container">
+        <div class="coin">
+        </div>
+      </div>
+
+
+
+</body>
+</html>

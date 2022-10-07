@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="91" fill="none" viewBox="0 0 96 91">
+  <g class="Group 74">
+    <g class="Group 53">
+      <path fill="#BDBBBC" d="M13 1.5h82v74h-5v1h-1v13H13v-88Z" class="Rectangle 88" opacity=".5"/>
+      <path fill="#A1A09E" d="M4 2.5H2v72h3v1h1v1h1v12h5v-86H8v1H4v-1Z" class="Vector 27"/>
+      <path fill="#5C5B59" d="M1 1.5H0v74h1v-74Z" class="Vector 10"/>
+      <path fill="#BDBBBC" d="M13 1.5h-1v88h1v-88Z" class="Vector 18"/>
+      <path fill="#BDBBBC" d="M2 1.5H1v74h1v-74Z" class="Vector 19"/>
+      <path fill="#BDBBBC" d="M5 75.5H2v-1h3v1Z" class="Vector 20"/>
+      <path fill="#BDBBBC" d="M6 76.5H5v-1h1v1Z" class="Vector 21"/>
+      <path fill="#BDBBBC" d="M12 89.5H7v-1h5v1Z" class="Vector 23"/>
+      <path fill="#BDBBBC" d="M7 89.5H6v-13h1v13Z" class="Vector 22"/>
+      <path fill="#5C5B59" d="M5 75.5H1v1h4v-1Z" class="Vector 11"/>
+      <path fill="#5C5B59" d="M6 76.5H5v13h1v-13Z" class="Vector 12"/>
+      <path fill="#5C5B59" d="M14 78.5h-1v11h1v-11Z" class="Vector 38"/>
+      <path fill="#5C5B59" d="M30 78.5h-1v11h1v-11Z" class="Vector 39"/>
+      <path fill="#5C5B59" d="M64 89.5H6v1h58v-1Z" class="Vector 13"/>
+      <path fill="#5C5B59" d="M32 .5h-2v1h2v-1Z" class="Vector 14"/>
+      <path fill="#C1AA14" d="M33 .5h-1v1h1v-1Z" class="Vector 34"/>
+      <path fill="#C1AA14" d="M83 .5h-1v1h1v-1Z" class="Vector 36"/>
+      <path fill="#DEC218" d="M82 .5H33v1h49v-1Z" class="Vector 35"/>
+      <path fill="#5C5B59" d="M87 .5h-4v1h4v-1Z" class="Vector 28"/>
+      <path fill="#5C5B59" d="M91 1.5h-4v1h4v-1Z" class="Vector 37"/>
+      <path fill="#5C5B59" d="M95 .5h-4v1h4v-1Z" class="Vector 29"/>
+      <path fill="#5C5B59" d="M96 1.5h-1v74h1v-74Z" class="Vector 30"/>
+      <path fill="#5C5B59" d="M4 .5H1v1h3v-1Z" class="Vector 15"/>
+      <path fill="#5C5B59" d="M13 .5H8v1h5v-1Z" class="Vector 16"/>
+      <path fill="#5C5B59" d="M8 1.5H4v1h4v-1Z" class="Vector 17"/>
+      <path fill="#BDBBBC" d="M4 2.5H2v-1h2v1Z" class="Vector 24"/>
+      <path fill="#BDBBBC" d="M12 2.5H8v-1h4v1Z" class="Vector 25"/>
+      <path fill="#BDBBBC" d="M8 3.5H4v-1h4v1Z" class="Vector 26"/>
+      <path fill="#5C5B59" d="M95 76.5h-5v-1h5v1Z" class="Vector 31"/>
+      <path fill="#5C5B59" d="M90 89.5h-1v-13h1v13Z" class="Vector 32"/>
+      <path fill="#5C5B59" d="M89 90.5H64v-1h25v1Z" class="Vector 33"/>
+      <path fill="#8B8B8B" d="M87 2.5h-3v62h-1v1H32v-1h-1v24h57v-13h1v-1h5v-72h-3v1h-4v-1Z" class="Union"/>
+      <g class="Group 42">
+        <path fill="#393738" d="M13 1.5h17v13H13z" class="Rectangle 89"/>
+        <path fill="#646364" d="M14 2.5h15v1H14z" class="Rectangle 90"/>
+        <path fill="#646364" d="M14 6.5h15v1H14z" class="Rectangle 92"/>
+        <path fill="#646364" d="M14 10.5h15v1H14z" class="Rectangle 94"/>
+        <path fill="#A1A09E" d="M14 3.5h15v1H14z" class="Rectangle 91"/>
+        <path fill="#A1A09E" d="M14 7.5h15v1H14z" class="Rectangle 93"/>
+        <path fill="#A1A09E" d="M14 11.5h15v1H14z" class="Rectangle 95"/>
+      </g>
+      <g class="Group 43">
+        <path fill="#5C5B59" d="M13 14.5h17v8H13z" class="Rectangle 96"/>
+        <path fill="#8A8A8A" d="M14 14.5h15v1H14z" class="Rectangle 94"/>
+        <path fill="#8A8A8A" d="M14 18.5h15v1H14z" class="Rectangle 97"/>
+        <path fill="#BDBBBC" d="M14 15.5h15v1H14z" class="Rectangle 95"/>
+        <path fill="#BDBBBC" d="M14 19.5h15v1H14z" class="Rectangle 98"/>
+      </g>
+      <g class="Group 45">
+        <path fill="#5C5B59" d="M13 30.5h17v8H13z" class="Rectangle 96"/>
+        <path fill="#8A8A8A" d="M14 30.5h15v1H14z" class="Rectangle 94"/>
+        <path fill="#8A8A8A" d="M14 34.5h15v1H14z" class="Rectangle 97"/>
+        <path fill="#BDBBBC" d="M14 31.5h15v1H14z" class="Rectangle 95"/>
+        <path fill="#BDBBBC" d="M14 35.5h15v1H14z" class="Rectangle 98"/>
+      </g>
+      <g class="Group 47">
+        <path fill="#5C5B59" d="M13 46.5h17v8H13z" class="Rectangle 96"/>
+        <path fill="#8A8A8A" d="M14 46.5h15v1H14z" class="Rectangle 94"/>
+        <path fill="#8A8A8A" d="M14 50.5h15v1H14z" class="Rectangle 97"/>
+        <path fill="#BDBBBC" d="M14 47.5h15v1H14z" class="Rectangle 95"/>
+        <path fill="#BDBBBC" d="M14 51.5h15v1H14z" class="Rectangle 98"/>
+      </g>
+      <g class="Group 49">
+        <path fill="#5C5B59" d="M13 62.5h17v8H13z" class="Rectangle 96"/>
+        <path fill="#8A8A8A" d="M14 62.5h15v1H14z" class="Rectangle 94"/>
+        <path fill="#8A8A8A" d="M14 66.5h15v1H14z" class="Rectangle 97"/>
+        <path fill="#BDBBBC" d="M14 63.5h15v1H14z" class="Rectangle 95"/>
+        <path fill="#BDBBBC" d="M14 67.5h15v1H14z" class="Rectangle 98"/>
+      </g>
+      <g class="Group 44">
+        <path fill="#5C5B59" d="M13 22.5h17v8H13z" class="Rectangle 96"/>
+        <path fill="#8A8A8A" d="M14 22.5h15v1H14z" class="Rectangle 94"/>
+        <path fill="#8A8A8A" d="M14 26.5h15v1H14z" class="Rectangle 97"/>
+        <path fill="#BDBBBC" d="M14 23.5h15v1H14z" class="Rectangle 95"/>
+        <path fill="#BDBBBC" d="M14 27.5h15v1H14z" class="Rectangle 98"/>
+      </g>
+      <g class="Group 46">
+        <path fill="#5C5B59" d="M13 38.5h17v8H13z" class="Rectangle 96"/>
+        <path fill="#8A8A8A" d="M14 38.5h15v1H14z" class="Rectangle 94"/>
+        <path fill="#8A8A8A" d="M14 42.5h15v1H14z" class="Rectangle 97"/>
+        <path fill="#BDBBBC" d="M14 39.5h15v1H14z" class="Rectangle 95"/>
+        <path fill="#BDBBBC" d="M14 43.5h15v1H14z" class="Rectangle 98"/>
+      </g>
+      <g class="Group 48">
+        <path fill="#5C5B59" d="M13 54.5h17v8H13z" class="Rectangle 96"/>
+        <path fill="#8A8A8A" d="M14 54.5h15v1H14z" class="Rectangle 94"/>
+        <path fill="#8A8A8A" d="M14 58.5h15v1H14z" class="Rectangle 97"/>
+        <path fill="#BDBBBC" d="M14 55.5h15v1H14z" class="Rectangle 95"/>
+        <path fill="#BDBBBC" d="M14 59.5h15v1H14z" class="Rectangle 98"/>
+      </g>
+      <g class="Group 50">
+        <path fill="#5C5B59" d="M13 70.5h17v8H13z" class="Rectangle 96"/>
+        <path fill="#8A8A8A" d="M14 70.5h15v1H14z" class="Rectangle 94"/>
+        <path fill="#8A8A8A" d="M14 74.5h15v1H14z" class="Rectangle 97"/>
+        <path fill="#BDBBBC" d="M14 71.5h15v1H14z" class="Rectangle 95"/>
+        <path fill="#BDBBBC" d="M14 75.5h15v1H14z" class="Rectangle 98"/>
+      </g>
+      <path fill="#8B8B8B" d="M14 78.5h15v11H14z" class="Rectangle 99"/>
+      <path fill="url(#a)" d="M32 1.25h51v62.984h-1v1.016H33v-1.016h-1V1.25Z" class="Rectangle 102"/>
+      <g class="Group 52">
+        <g class="Group 51">
+          <path fill="#BDBBBC" d="M40 75.5h1v1h-1z" class="Rectangle 102"/>
+          <path fill="#BDBBBC" d="M41 74.5h1v1h-1z" class="Rectangle 103"/>
+          <path fill="#BDBBBC" d="M39 74.5h1v1h-1z" class="Rectangle 110"/>
+          <path fill="#BDBBBC" d="M38 73.5h1v1h-1z" class="Rectangle 111"/>
+          <path fill="#BDBBBC" d="M37 72.5h1v1h-1z" class="Rectangle 112"/>
+          <path fill="#BDBBBC" d="M36 71.5h1v1h-1z" class="Rectangle 113"/>
+          <path fill="#BDBBBC" d="M35 70.5h1v1h-1z" class="Rectangle 114"/>
+          <path fill="#BDBBBC" d="M42 73.5h1v1h-1z" class="Rectangle 104"/>
+          <path fill="#BDBBBC" d="M43 72.5h1v1h-1z" class="Rectangle 105"/>
+          <path fill="#BDBBBC" d="M44 71.5h1v1h-1z" class="Rectangle 106"/>
+          <path fill="#BDBBBC" d="M45 70.5h1v1h-1z" class="Rectangle 107"/>
+          <path fill="#BDBBBC" d="M36 69.5h9v1h-9z" class="Rectangle 108"/>
+          <path fill="#5C5B59" d="M45 70.5h-9v1h1v1h1v1h1v1h1v1h1v-1h1v-1h1v-1h1v-1h1v-1Z" class="Vector 40"/>
+        </g>
+      </g>
+    </g>
+    <g class="Group 72">
+      <path fill="#181818" d="M38.263 60.625V54.5h5.25v.875h.875v1.75h-.875V58h.875v1.75h-.875v.875h-5.25Zm1.75-3.5h2.625v-1.75h-2.625v1.75Zm0 2.625h2.625V58h-2.625v1.75Zm6.02.875v-.875h-.876v-2.625h.876v-.875h4.374v.875h.876v2.625h-.876v.875h-4.374Zm.874-.875h2.626v-2.625h-2.626v2.625Zm6.896 0h.875v.875h-1.75v-.875h-.875v-3.5h1.75v3.5Zm1.75-3.5v3.5h-.875v-3.5h.875Zm2.625 0v3.5h-.875v.875h-1.75v-.875h.875v-3.5h1.75Zm.77 4.375v-.875h4.374v-.875h-3.5V58h-.875v-.875h.875v-.875h4.376v.875h-3.5V58h3.5v.875h.875v.875h-.875v.875h-5.25Zm7.77 0v-.875h-.876v-2.625h.876v-.875h4.374v.875h.876v1.75h-4.376v.875h3.5v.875h-4.374ZM67.591 58h2.626v-.875h-2.626V58Zm7.77-.875h.876V58h-.876v2.625h-1.75V56.25h1.75v.875Zm3.5-.875v.875h-2.624v-.875h2.624Z" class="Bowser"/>
+      <g class="enemy/bowser-1">
+        <g class="black">
+          <path fill="#000" d="M55 15.5h3v3h-2v-2h-1v-1Z"/>
+          <path fill="#000" fill-rule="evenodd" d="M55 14.5v-1h1v-1h-2v2h-1v-1h-1v1h1v1h1v2h1v1h1v1h4v-1h1v-1h3v-1h-3v1h-1v1h-1v-4h1v-1h1v-1h-1v1h-2v1h-3Zm0 1h-1v-1h1v1Zm5-5v-1h-1v1h1Zm0 0h1v1h-1v-1Z" clip-rule="evenodd"/>
+          <path fill="#000" d="M66 34.5h1v1h-1v-1Z"/>
+          <path fill="#000" fill-rule="evenodd" d="M68 22.5v-1h-1v-2h-1v3h-1v1h-1v1h-2v1h-1v1h-2v1h-1v1h-1v1h-3v-1h-1v1h-1v-1h-1v-1h-1v1h1v1h-3v1h-1v1h1v1h-1v1h1v1h1v-1h1v-2h-2v-1h3v1h1v-1h1v-1h1v1h3v-1h1v-1h2v-1h1v-1h1v3h-1v1h-1v1h-2v1h-1v-1h-1v1h-1v2h-1v1h-1v1h1v1h1v1h-1v1h1v1h4v-1h1v-1h3v-1h1v-1h1v-1h1v3h-1v3h1v-3h1v-3h1v-7h-1v-2h-1v-1h-1v-2h1v-1h2Zm-3 3v1h1v2h1v5h-1v1h-2v-2h-1v-1h-1v-2h1v-3h-1v-1h3Zm-3 6v1h1v2h1v2h-1v1h-1v-2h-1v-2h-1v-2h2Zm-2 2v2h1v2h-1v1h-2v1h-3v-1h1v-1h-1v-1h-1v-1h1v-1h1v-2h1v1h1v-1h1v1h1Zm-8-3v-1h-1v1h1Zm-3 3h-1v-1h1v1Z" clip-rule="evenodd"/>
+          <path fill="#000" d="M69 24.5v-2h-1v2h1Zm1 2v-2h-1v2h1Zm1 4v-4h-1v4h1Zm-1 7v-3h1v-4h1v5h-1v2h-1Zm0 0h-1v2h1v-2Zm-15 8h-1v1h1v-1Zm-1-3v1h1v2h1v-2h1v-1h-1v-1h-1v1h-1Z"/>
+          <path fill="#000" fill-rule="evenodd" d="M51 41.5h-1v-1h1v1Zm0 0v1h3v-1h-3Z" clip-rule="evenodd"/>
+          <path fill="#000" d="M50 23.5h-2v-2h1v1h1v1Zm3-4h1v1h-1v-1Z"/>
+          <path fill="#000" fill-rule="evenodd" d="M50 6.5v4h1v3h-1v2h-2v1h-1v5h-1v6h-1v2h-1v1h-1v1h-1v1h1v2h-1v1h1v1h1v1h1v1h2v-1h1v1h1v2h-1v3h-1v1h-1v2h-1v2h8v-1h1v1h13v-2h2v1h6v-1h1v-1h-1v-1h-1v-1h1v-2h-1v-1h-1v1h-1v-1h-1v-1h1v-1h1v-1h1v-3h1v-11h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-2h-1v-2h-3v-1h-1v-1h1v-6h-2v1h-1v-1h-3v1h-1v-1h-1v1h-1v1h-1v1h-1v-1h-1v-1h-1v-1h-2Zm2 1v1h1v1h1v1h-1v1h-1v-1h-1v-3h1Zm4 5v-1h-3v1h-1v1h-1v2h-1v1h1v-1h1v1h1v1h-3v1h-1v-2h-1v2h1v1h-1v2h-1v2h1v1h-1v1h2v-1h1v-1h1v-1h3v1h3v-1h1v-1h1v1h2v-2h2v1h-1v2h-1v1h-2v1h-1v1h-3v-1h-1v2h-2v-3h-1v1h-1v2h-1v-1h-2v1h-1v2h-1v2h1v2h-1v-1h-1v-1h-1v1h1v2h-1v1h1v1h1v1h2v-1h1v-1h1v3h1v2h-1v3h-1v1h-1v2h-1v1h7v-1h1v1h12v-2h-1v-2h-1v-2h1v1h1v2h1v1h2v1h6v-1h-2v-1h-1v-1h2v-2h-1v1h-1v1h-1v-2h-2v1h-3v-1h2v-2h1v1h1v-1h1v-1h1v-1h1v-3h1v-7h-1v-1h1v-3h-2v-2h-1v-1h-1v-1h-2v-1h-2v1h-1v-1h-1v-1h1v-2h-1v-1h-3v-1h2v-1h1v-5h-1v2h-1v1h-1v-1h-1v-1h2v-1h-3v1h-1v-1h-1v1h-1v1h-1v1h4v1h1v1h-2v-1h-1v1h-1Zm1-4v1h1v-1h-1Zm-7 10v1h1v-1h-1Zm18-2h-1v-1h-1v2h2v-1Z" clip-rule="evenodd"/>
+        </g>
+        <g class="white">
+          <path fill="#fff" d="M52 7.5h-1v3h1v1h1v-1h1v-1h-1v-1h-1v-1Zm10 0h-1v1h1v-1Zm1 0h1v5h-1v1h-2v-1h-1v-1h1v-1h1v-1h1v-2Zm-8 8h3v3h-2v-2h-1v-1Zm-5 0h1v1h-1v-1Zm-1 1h-1v2h1v-2Zm7-8h1v2h-1v-2Zm3 0h-1v2h1v-2Zm-5 14h3v1h-3v-1Zm7 0v-1h-2v1h2Zm5-7h1v1h1v1h-2v-2Zm-17 6h1v1h-1v-1Zm1 2v-1h1v1h-1Zm0 0v1h-1v1h-2v-1h1v-1h2Zm1 1h1v2h-1v-2Zm4 1h-1v2h1v-2Zm13-5h2v2h-1v-1h-1v-1Zm4 3h2v3h-1v-2h-1v-1Zm-5 3h-1v-1h-1v-2h1v-1h2v2h1v2h1v4h1v4h-1v3h-1v2h-1v2h-2v-3h1v-3h1v-7h-1v-2Z"/>
+          <path fill="#fff" d="M66 35.5v-1h1v1h-1Z"/>
+          <path fill="#fff" fill-rule="evenodd" d="M64 36.5h-1v-1h1v1Zm0 0h1v-1h1v2h-1v1h-2v-1h1v-1Z" clip-rule="evenodd"/>
+          <path fill="#fff" d="M66 41.5v1h-1v-1h1Zm8 2h-2v-1h1v-1h1v2Zm-2-14v2h1v-1h1v-1h-2Zm1 7h-1v1h1v-1Z"/>
+          <path fill="#fff" fill-rule="evenodd" d="M59 28.5h-1v1h-1v1h-3v-1h-1v1h1v1h-4v-1h-1v1h1v1h6v1h1v-1h1v-1h2v1h1v-1h-1v-1h1v-1h1v-1h-2v1h-1v-1Zm-2 4v-1h-1v1h1Z" clip-rule="evenodd"/>
+          <path fill="#fff" d="M62 33.5h1v1h-1v-1Zm-9 3v-1h-4v-1h-1v1h1v2h1v1h5v1h1v-1h-1v-1h-1v-1h1v-1h-1v1h-1Zm8 3h-1v1h-1v1h-1v2h-1v1h1v-1h1v-2h1v-1h1v-1Zm-5 6h1v2h-1v-2Zm-1 1h-1v1h1v-1Zm-6-1h1v2h-1v-2Zm-1 0v2h-2v-1h1v-1h1Zm4-5v-1h-2v1h1v1h3v1h1v-1h1v1h1v-1h-1v-1h-1v1h-1v-1h-2Zm-5-9h-1v1h1v-1Zm-4 0h1v1h-1v-1Zm1 3h-1v1h1v-1Zm16 13v-2h-2v2h2Z"/>
+        </g>
+        <g class="green">
+          <path fill="#008200" d="M59 10.5h1v1h-1v-1Zm-6 1h3v1h-2v2h-1v-1h-1v-1h1v-1Zm0 3v1h1v2h-1v-1h-1v-2h1Zm6 0h1v-1h1v1h3v1h1v2h-1v-1h-3v1h-1v1h-1v-4Zm7 4h2v1h2v1h-2v1h-1v-2h-1v-1Z"/>
+          <path fill="#008200" fill-rule="evenodd" d="M69 22.5h-1v-1h1v1Zm0 0v2h1v2h1v4h1v-1h2v-2h-1v-3h-1v-3h-1v-1h-1v2h-1Z" clip-rule="evenodd"/>
+          <path fill="#008200" d="M74 30.5h-1v1h-1v4h-1v2h-1v2h-1v1h1v-1h1v-1h1v-2h1v-2h1v-4Zm-12 2h1v1h-1v1h2v1h-1v2h-1v-2h-1v-2h-1v-1h1v-1h1v1Zm-12-2h1v1h-1v-1Zm-1 0h-1v1h-1v1h1v-1h1v-1Zm-1-9h-1v2h1v-2Z"/>
+        </g>
+        <g class="orange">
+          <path fill="#D8982C" d="M58 7.5h-1v1h1v-1Zm3 0h-2v2h1v1h1v-1h-1v-1h1v-1Zm-4 2h1v1h-1v-1Zm-1 0h-1v1h1v-1Zm1 2h1v1h2v1h-2v1h-3v-1h1v-1h1v-1Zm-2 3v1h-1v-1h1Zm-4-1h1v2h-1v-2Zm0 15h1v1h-1v-1Z"/>
+          <path fill="#D8982C" fill-rule="evenodd" d="M55 17.5h-5v1h-1v1h-1v2h2v1h8v-1h3v-1h2v1h-1v2h-1v1h-2v1h-1v1h-3v1h-3v-1h-1v-1h-1v2h-1v-1h-2v1h-1v2h-1v2h2v-1h1v-1h3v1h1v1h2v-1h-2v-1h1v-1h1v1h3v-1h1v-1h1v-1h2v1h-1v1h-1v1h1v-1h2v-2h1v3h-1v2h1v1h1v2h2v-1h1v-5h-1v-2h-1v-1h-3v-1h2v-1h1v-1h1v-3h-1v-1h-1v-1h-3v1h-1v1h-4v-1h-1v-1Zm7 8v1h-1v-1h1Zm-11 3v-1h-1v1h1Zm3-9h-1v1h1v-1Z" clip-rule="evenodd"/>
+          <path fill="#D8982C" d="M50 18.5h1v1h-1v-1Zm-6 14h1v1h1v-1h1v1h1v3h-1v1h-2v-1h-1v-4Zm5 1h-1v-1h1v1Zm6 1h-1v1h-5v-2h1v-1h5v2Zm5 4h-2v1h-2v-2h-1v-3h1v-1h2v-1h1v1h1v2h1v2h-1v1Z"/>
+          <path fill="#D8982C" fill-rule="evenodd" d="M65 38.5h-5v1h-1v1h-3v1h1v2h-1v2h-1v-2h-1v-1h-3v-1h-1v-1h-1v3h-1v1h-1v1h1v2h1v-2h1v2h3v-1h1v-1h1v2h1v-2h1v2h1v-2h2v2h6v-2h-1v-2h-1v-2h1v-3Zm-7 5v1h-1v-1h1Zm1-2v2h-1v-2h1Zm1-1h1v-1h-1v1Zm0 0v1h-1v-1h1Z" clip-rule="evenodd"/>
+          <path fill="#D8982C" d="M65 38.5v-1h1v1h-1Zm1 4h3v-1h2v2h1v1h1v1h2v1h-6v-1h-2v-1h-1v-2Zm-12-3v-1h-4v-1h-1v1h1v1h2v1h2v1h1v-2h-1Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <defs>
+    <linearGradient id="a" x1="57.5" x2="57.5" y1="1.25" y2="65.25" class="a" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FD0"/>
+      <stop offset="1" stop-color="#C58E00" stop-opacity=".58"/>
+    </linearGradient>
+  </defs>
+</svg>
