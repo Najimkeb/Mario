@@ -9,7 +9,7 @@ Ils nous a été demandés dans le cadre de notre formation a la <strong>Wild co
 L'aplication a pour objectif de présenter l'origine de <strong>Mario</strong> avec quelques jeux qui nous ont marqués.
 <br>
 <br>
-<i>Merci à Thomas, Johnathan, Elodie et Marie-Hermine d'avoir collaborer à cette réalisation !</i>
+<i>Merci à Thomas, Johnathan, Najim, Elodie et Marie-Hermine d'avoir collaborer à cette réalisation !</i>
 <br>
 <br>
 <a href="https://www.instagram.com/mariobrossdu31/">
