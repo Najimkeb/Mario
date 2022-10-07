@@ -1,6 +1,6 @@
 # *Welcome to our project "Mario"*
-# Voici notre page [Mario](https://najimkeb.github.io/Mario/)!
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Affiche_Super_Mario_Bros_%282023%29.jpg/640px-Affiche_Super_Mario_Bros_%282023%29.jpg)
+## Voici notre page [Mario](https://najimkeb.github.io/Mario/)!
 <br>
 Nous sommes ravis de vous présenter notre projet Mario qui a bercé l'enfance de nombreuses personnes ! 
 <br>
